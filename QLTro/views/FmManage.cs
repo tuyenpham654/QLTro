@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace QLTro
 {
-    public partial class FmQuanLy : Form
+    public partial class FmManage : Form
     {
-        public FmQuanLy()
+        public FmManage()
         {
             InitializeComponent();
         }
         private string tk;
-        public FmQuanLy(String tentk,String pass)
+        public FmManage(String tentk,String pass)
         {
             string tk = tentk;
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace QLTro
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            FrmLogin f = new FrmLogin();
             f.Show();
             this.Close();
         }

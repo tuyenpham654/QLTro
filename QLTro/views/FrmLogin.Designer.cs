@@ -1,6 +1,6 @@
 ﻿namespace QLTro
 {
-    partial class Form1
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            this.txt_username = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.FogotPassword = new System.Windows.Forms.LinkLabel();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtUserName
+            // txt_username
             // 
-            this.txtUserName.ForeColor = System.Drawing.Color.Silver;
-            this.txtUserName.Location = new System.Drawing.Point(132, 172);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(196, 22);
-            this.txtUserName.TabIndex = 0;
-            this.txtUserName.Text = "UserName";
-            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
-            this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
-            this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
+            this.txt_username.ForeColor = System.Drawing.Color.Silver;
+            this.txt_username.Location = new System.Drawing.Point(132, 172);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(196, 22);
+            this.txt_username.TabIndex = 0;
+            this.txt_username.Text = "UserName";
+            this.txt_username.Enter += new System.EventHandler(this.txtUserName_Enter);
+            this.txt_username.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
-            // txtPassword
+            // txt_password
             // 
-            this.txtPassword.ForeColor = System.Drawing.Color.Silver;
-            this.txtPassword.Location = new System.Drawing.Point(132, 226);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(196, 22);
-            this.txtPassword.TabIndex = 1;
-            this.txtPassword.Text = "Password";
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
+            this.txt_password.ForeColor = System.Drawing.Color.Silver;
+            this.txt_password.Location = new System.Drawing.Point(132, 226);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(196, 22);
+            this.txt_password.TabIndex = 1;
+            this.txt_password.Text = "Password";
+            this.txt_password.UseSystemPasswordChar = true;
+            this.txt_password.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txt_password.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.btnClose);
+            this.groupBox1.Controls.Add(this.btn_close);
             this.groupBox1.Controls.Add(this.FogotPassword);
-            this.groupBox1.Controls.Add(this.btnLogin);
-            this.groupBox1.Controls.Add(this.txtUserName);
-            this.groupBox1.Controls.Add(this.txtPassword);
+            this.groupBox1.Controls.Add(this.btn_login);
+            this.groupBox1.Controls.Add(this.txt_username);
+            this.groupBox1.Controls.Add(this.txt_password);
             this.groupBox1.Location = new System.Drawing.Point(107, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(473, 357);
@@ -89,22 +87,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // btnClose
+            // btn_close
             // 
-            this.btnClose.Location = new System.Drawing.Point(294, 298);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(121, 38);
-            this.btnClose.TabIndex = 5;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.button2_Click);
+            this.btn_close.Location = new System.Drawing.Point(294, 298);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(121, 38);
+            this.btn_close.TabIndex = 5;
+            this.btn_close.Text = "Close";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // FogotPassword
             // 
             this.FogotPassword.AutoSize = true;
             this.FogotPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.FogotPassword.LinkColor = System.Drawing.Color.Gray;
-            this.FogotPassword.Location = new System.Drawing.Point(209, 207);
+            this.FogotPassword.Location = new System.Drawing.Point(129, 251);
             this.FogotPassword.Name = "FogotPassword";
             this.FogotPassword.Size = new System.Drawing.Size(119, 16);
             this.FogotPassword.TabIndex = 4;
@@ -112,27 +110,26 @@
             this.FogotPassword.Text = "Forgot Password ?";
             this.FogotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // btnLogin
+            // btn_login
             // 
-            this.btnLogin.Location = new System.Drawing.Point(84, 298);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(121, 38);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
+            this.btn_login.Location = new System.Drawing.Point(84, 298);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(121, 38);
+            this.btn_login.TabIndex = 3;
+            this.btn_login.Text = "Login";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 422);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Enter += new System.EventHandler(this.Form1_Enter);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -143,12 +140,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txt_username;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel FogotPassword;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

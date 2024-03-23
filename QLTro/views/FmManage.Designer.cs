@@ -1,6 +1,6 @@
 ﻿namespace QLTro
 {
-    partial class FmQuanLy
+    partial class FmManage
     {
         /// <summary>
         /// Required designer variable.
@@ -81,21 +81,21 @@
             // tàiKhoảnToolStripMenuItem
             // 
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài Khoản";
             this.tàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.tàiKhoảnToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
             // thoátChươngTrìnhToolStripMenuItem
             // 
             this.thoátChươngTrìnhToolStripMenuItem.Name = "thoátChươngTrìnhToolStripMenuItem";
-            this.thoátChươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.thoátChươngTrìnhToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thoátChươngTrìnhToolStripMenuItem.Text = "Thoát chương trình";
             this.thoátChươngTrìnhToolStripMenuItem.Click += new System.EventHandler(this.thoátChươngTrìnhToolStripMenuItem_Click);
             // 
@@ -112,19 +112,19 @@
             // phòngToolStripMenuItem
             // 
             this.phòngToolStripMenuItem.Name = "phòngToolStripMenuItem";
-            this.phòngToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.phòngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.phòngToolStripMenuItem.Text = "Phòng";
             // 
             // côngNhânViênToolStripMenuItem
             // 
             this.côngNhânViênToolStripMenuItem.Name = "côngNhânViênToolStripMenuItem";
-            this.côngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.côngNhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.côngNhânViênToolStripMenuItem.Text = "Công Nhân Viên";
             // 
             // kháchHàngToolStripMenuItem
             // 
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.kháchHàngToolStripMenuItem.Text = "Khách Hàng";
             // 
             // kinhDoanhToolStripMenuItem
@@ -139,13 +139,13 @@
             // hợpĐồngToolStripMenuItem
             // 
             this.hợpĐồngToolStripMenuItem.Name = "hợpĐồngToolStripMenuItem";
-            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.hợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hợpĐồngToolStripMenuItem.Text = "Hợp Đồng";
             // 
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
             // 
             // traCứuToolStripMenuItem
@@ -161,19 +161,19 @@
             // phòngToolStripMenuItem1
             // 
             this.phòngToolStripMenuItem1.Name = "phòngToolStripMenuItem1";
-            this.phòngToolStripMenuItem1.Size = new System.Drawing.Size(199, 26);
+            this.phòngToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.phòngToolStripMenuItem1.Text = "Phòng";
             // 
             // kháchToolStripMenuItem
             // 
             this.kháchToolStripMenuItem.Name = "kháchToolStripMenuItem";
-            this.kháchToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.kháchToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.kháchToolStripMenuItem.Text = "Khách";
             // 
             // côngNhânViênToolStripMenuItem1
             // 
             this.côngNhânViênToolStripMenuItem1.Name = "côngNhânViênToolStripMenuItem1";
-            this.côngNhânViênToolStripMenuItem1.Size = new System.Drawing.Size(199, 26);
+            this.côngNhânViênToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.côngNhânViênToolStripMenuItem1.Text = "Công Nhân Viên";
             // 
             // báoCáoToolStripMenuItem
@@ -197,13 +197,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(701, 9);
+            this.label1.Location = new System.Drawing.Point(835, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
+            this.label1.Size = new System.Drawing.Size(39, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Chào bạn ";
+            this.label1.Text = "Chào";
             // 
-            // FmQuanLy
+            // FmManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -215,7 +215,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FmQuanLy";
+            this.Name = "FmManage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmQuanLy";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

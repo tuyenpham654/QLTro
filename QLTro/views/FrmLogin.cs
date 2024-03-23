@@ -12,9 +12,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace QLTro
 {
-    public partial class Form1 : Form
+    public partial class FrmLogin : Form
     {
-        public Form1()
+        public FrmLogin()
         {
             InitializeComponent();
          
@@ -27,31 +27,31 @@ namespace QLTro
 
         private void txtUserName_Enter(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "UserName")
+            if (txt_username.Text == "UserName")
             {
-                txtUserName.Text = "";
+                txt_username.Text = "";
 
-                txtUserName.ForeColor = Color.Black;
+                txt_username.ForeColor = Color.Black;
             }
         }
 
         private void txtUserName_Leave(object sender, EventArgs e)
         {
-            if (txtUserName.Text == "")
+            if (txt_username.Text == "")
             {
-                txtUserName.Text = "UserName";
+                txt_username.Text = "UserName";
 
-                txtUserName.ForeColor = Color.Silver;
+                txt_username.ForeColor = Color.Silver;
             }
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "Password")
+            if (txt_password.Text == "Password")
             {
-                txtPassword.Text = "";
+                txt_password.Text = "";
 
-                txtPassword.ForeColor = Color.Black;
+                txt_password.ForeColor = Color.Black;
                 
             }
             
@@ -59,11 +59,11 @@ namespace QLTro
 
         private void txtPassword_Leave(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "")
+            if (txt_password.Text == "")
             {
-                txtPassword.Text = "Password";
+                txt_password.Text = "Password";
 
-                txtPassword.ForeColor = Color.Silver;
+                txt_password.ForeColor = Color.Silver;
             }
         }
 
@@ -78,8 +78,8 @@ namespace QLTro
             try
             {
                 connect.Open();
-                string tenTK = txtUserName.Text;
-                string pass = txtPassword.Text;
+                string tenTK = txt_username.Text;
+                string pass = txt_password.Text;
                 string sql = "select * from QTV where tenTK ='" + tenTK + "' and MatKhau ='" + pass + "'";
                 SqlCommand cmd = new SqlCommand(sql, connect);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -87,7 +87,7 @@ namespace QLTro
                 {
                     MessageBox.Show("Đăng nhập thành công", "Thông Báo!");
 
-                    FmQuanLy f = new FmQuanLy(tenTK,pass);
+                    FmManage f = new FmManage(tenTK,pass);
                     f.Show();
                     this.Hide();
                 }
@@ -96,7 +96,7 @@ namespace QLTro
                     MessageBox.Show("Đăng nhập thất bại", "Thông Báo!");
                 }
             }
-            catch (Exception EX)
+            catch (Exception)
             {
                 MessageBox.Show("Lỗi kết nối", "Thông Báo!");
 
@@ -104,24 +104,13 @@ namespace QLTro
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_close_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUserName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi ứng dụng không?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
         }
     }
 }
