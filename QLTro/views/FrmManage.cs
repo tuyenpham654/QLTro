@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTro.views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,6 +52,12 @@ namespace QLTro
         {
             
             FrmAccount f = new FrmAccount(tk);
+            f.Show();
+        }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNguoiThue f = new FrmNguoiThue();
             f.Show();
         }
     }

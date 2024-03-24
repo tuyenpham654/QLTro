@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,25 @@ namespace QLTro.database
         {
             return pr.Login("sp_login", username, password);
         }
+        public DataTable LoadDataTable(string strView)
+        {
+            return pr.LoadDataTable(strView);
+        }
+        // Xoá
+        public void Delete(string tenbang, string ID)
+        {
+            pr.Delete("sp_Delete", tenbang, ID);
+        }
+        // Tìm kiếm
+        public DataTable Search(string ten, string key)
+        {
+            return pr.Search("sp_search", ten, key);
+        }
+        // Người Thuê
+        public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
+        {
+            pr.NguoiThue("sp_NguoiThue", MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email,TrangThai, LOAI);
+        }
+
     }
 }
