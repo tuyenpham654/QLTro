@@ -37,5 +37,17 @@ namespace QLTro.database
         {
             con.Close();
         }
+        public bool Login(string strStore, string username, string password) //strStore = tên store Procedu truyền vào
+        {
+
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("username", username);
+            cmd.Parameters.AddWithValue("password", password);
+            DataTable dt = new DataTable();
+            dap = new SqlDataAdapter(cmd);
+            dap.Fill(dt);
+            return dt.Rows.Count > 0;
+        }
     }
 }

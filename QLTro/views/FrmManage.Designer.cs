@@ -1,6 +1,6 @@
 ﻿namespace QLTro
 {
-    partial class FmManage
+    partial class FrmManage
     {
         /// <summary>
         /// Required designer variable.

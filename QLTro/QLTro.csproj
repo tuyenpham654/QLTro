@@ -53,17 +53,17 @@
     <Compile Include="controllers\Controls.cs" />
     <Compile Include="database\Database.cs" />
     <Compile Include="database\DataProvider.cs" />
-    <Compile Include="views\FmAccount.cs">
+    <Compile Include="views\FrmAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\FmAccount.Designer.cs">
-      <DependentUpon>FmAccount.cs</DependentUpon>
+    <Compile Include="views\FrmAccount.Designer.cs">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\FmManage.cs">
+    <Compile Include="views\FrmManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\FmManage.Designer.cs">
-      <DependentUpon>FmManage.cs</DependentUpon>
+    <Compile Include="views\FrmManage.Designer.cs">
+      <DependentUpon>FrmManage.cs</DependentUpon>
     </Compile>
     <Compile Include="views\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -71,14 +71,14 @@
     <Compile Include="views\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="models\ChuTro.cs" />
+    <Compile Include="models\Account.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="views\FmAccount.resx">
-      <DependentUpon>FmAccount.cs</DependentUpon>
+    <EmbeddedResource Include="views\FrmAccount.resx">
+      <DependentUpon>FrmAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\FmManage.resx">
-      <DependentUpon>FmManage.cs</DependentUpon>
+    <EmbeddedResource Include="views\FrmManage.resx">
+      <DependentUpon>FrmManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

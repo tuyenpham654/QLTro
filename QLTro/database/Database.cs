@@ -19,5 +19,10 @@ namespace QLTro.database
         {
             pr.Disconnect();
         }
+        //đăng nhập
+        public bool Login(string username, string password)
+        {
+            return pr.Login("sp_login", username, password);
+        }
     }
 }

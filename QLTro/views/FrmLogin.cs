@@ -1,10 +1,12 @@
-﻿using System;
+﻿using QLTro.controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,11 +21,7 @@ namespace QLTro
             InitializeComponent();
          
         }
-
-        private void Form1_Enter(object sender, EventArgs e)
-        {
-
-        }
+        Controls ctr = new controllers.Controls();
 
         private void txtUserName_Enter(object sender, EventArgs e)
         {
@@ -72,44 +70,26 @@ namespace QLTro
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            SqlConnection connect = new SqlConnection(@"Data Source=STEVE;Initial Catalog=Quan_Ly_Sinh_Vien;User ID=sa;Password=123456;Integrated Security=True");
-            try
-            {
-                connect.Open();
-                string tenTK = txt_username.Text;
-                string pass = txt_password.Text;
-                string sql = "select * from QTV where tenTK ='" + tenTK + "' and MatKhau ='" + pass + "'";
-                SqlCommand cmd = new SqlCommand(sql, connect);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read() == true)
-                {
-                    MessageBox.Show("Đăng nhập thành công", "Thông Báo!");
-
-                    FmManage f = new FmManage(tenTK,pass);
-                    f.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Đăng nhập thất bại", "Thông Báo!");
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Lỗi kết nối", "Thông Báo!");
-
-            }
-
-        }
-
         private void btn_close_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn thoát khỏi ứng dụng không?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 System.Windows.Forms.Application.Exit();
+            }
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (ctr.Login(txt_username.Text, txt_password.Text))
+            {
+                FrmManage f = new FrmManage();
+                this.Hide();
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

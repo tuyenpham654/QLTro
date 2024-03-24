@@ -12,10 +12,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace QLTro
 {
-    public partial class FmAccount : Form
+    public partial class FrmAccount : Form
     {
         SqlConnection connect = new SqlConnection(@"Data Source=STEVE;Initial Catalog=Quan_Ly_Sinh_Vien;User ID=sa;Password=123456;Integrated Security=True");
-        public FmAccount(string tk)
+        public FrmAccount(string tk)
         {
             InitializeComponent();
             label1.Text = "Xin chào " + tk;

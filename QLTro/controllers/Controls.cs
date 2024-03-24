@@ -18,5 +18,9 @@ namespace QLTro.controllers
         {
             db.Disconnect();
         }
+        public bool Login(string username, string password)
+        {
+            return db.Login(username, password);
+        }
     }
 }

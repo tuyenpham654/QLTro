@@ -1,6 +1,6 @@
 ﻿namespace QLTro
 {
-    partial class FmAccount
+    partial class FrmAccount
     {
         /// <summary>
         /// Required designer variable.
