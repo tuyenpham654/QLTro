@@ -81,6 +81,12 @@
     <Compile Include="views\FrmNguoiThue.Designer.cs">
       <DependentUpon>FrmNguoiThue.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmPhong.Designer.cs">
+      <DependentUpon>FrmPhong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="views\FrmAccount.resx">
       <DependentUpon>FrmAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="views\FrmNguoiThue.resx">
       <DependentUpon>FrmNguoiThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmPhong.resx">
+      <DependentUpon>FrmPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
