@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dt_ngaysinh = new System.Windows.Forms.DateTimePicker();
@@ -50,6 +51,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
@@ -58,7 +60,6 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_search = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_close = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -302,6 +303,18 @@
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
+            // btn_close
+            // 
+            this.btn_close.AutoSize = true;
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.Location = new System.Drawing.Point(1293, 32);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(140, 40);
+            this.btn_close.TabIndex = 2;
+            this.btn_close.Text = "Đóng";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
             // btn_them
             // 
             this.btn_them.AutoSize = true;
@@ -350,6 +363,14 @@
             this.dgv_nguoithue.AllowUserToAddRows = false;
             this.dgv_nguoithue.AllowUserToDeleteRows = false;
             this.dgv_nguoithue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_nguoithue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_nguoithue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_nguoithue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_nguoithue.Location = new System.Drawing.Point(0, 0);
@@ -396,18 +417,6 @@
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm kiếm ";
-            // 
-            // btn_close
-            // 
-            this.btn_close.AutoSize = true;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.Location = new System.Drawing.Point(1293, 32);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(140, 40);
-            this.btn_close.TabIndex = 2;
-            this.btn_close.Text = "Đóng";
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // FrmNguoiThue
             // 

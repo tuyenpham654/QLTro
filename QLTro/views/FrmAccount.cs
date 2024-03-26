@@ -15,11 +15,9 @@ namespace QLTro
     public partial class FrmAccount : Form
     {
         SqlConnection connect = new SqlConnection(@"Data Source=STEVE;Initial Catalog=Quan_Ly_Sinh_Vien;User ID=sa;Password=123456;Integrated Security=True");
-        public FrmAccount(string tk)
+        public FrmAccount()
         {
             InitializeComponent();
-            label1.Text = "Xin chào " + tk;
-            loaddata(tk);
         }
         public void loaddata(string t)
         {

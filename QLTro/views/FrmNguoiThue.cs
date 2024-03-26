@@ -32,17 +32,17 @@ namespace QLTro.views
         private void btn_xoa_Click(object sender, EventArgs e)
         {
             Controls ctr = new controllers.Controls();
-            NguoiThue n = new NguoiThue();
+            NguoiThue nt = new NguoiThue();
             if (txt_manguoithue.Text != "")
             {
                 DialogResult tb = MessageBox.Show("Bạn có chắc muốn xóa ??", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (tb == DialogResult.OK)
                 {
-                    n.MaNguoiThue1 = txt_manguoithue.Text;
-                    ctr.Delete("NguoiThue", n.MaNguoiThue1);
+                    nt.Manguoithue = txt_manguoithue.Text;
+                    ctr.Delete("NguoiThue", nt.Manguoithue);
                     ctr.Disconnect();
                     MessageBox.Show("Xóa sách thành công", "Thông báo");
-                    TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email };
+                    TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email , txt_trangthai };
                     foreach (TextBox textBox in textBoxes)
                     {
                         textBox.Text = "";
@@ -52,7 +52,7 @@ namespace QLTro.views
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn người thuê để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng chọn đối tượng xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -94,28 +94,28 @@ namespace QLTro.views
             LoadDGV();
         }
 
-        NguoiThue n;
+        NguoiThue nt;
         private void btn_them_Click(object sender, EventArgs e)
         {
             Controls ctr = new controllers.Controls();
-            n = new NguoiThue();
+            nt = new NguoiThue();
             if (IsEmpty(txt_manguoithue.Text) || IsEmpty(txt_hoten.Text) || IsEmpty(txt_dc.Text) || IsEmpty(txt_sdt.Text) || IsEmpty(txt_email.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                n.MaNguoiThue1 = txt_manguoithue.Text;
-                n.HoTen1 = txt_hoten.Text;
-                n.GioiTinh1 = rad_nam.Checked ? true : false;
-                n.NgaySinh1 = dt_ngaysinh.Value;
-                n.DiaChi1 = txt_dc.Text;
-                n.DienThoai1 = txt_sdt.Text;
-                n.Email1 = txt_email.Text;
-                ctr.NguoiThue(int.Parse(n.MaNguoiThue1), n.HoTen1, n.GioiTinh1, n.NgaySinh1, n.Email1, n.DienThoai1, n.DiaChi1,n.TrangThai1, "INSERT");
+                nt.Manguoithue = txt_manguoithue.Text;
+                nt.Hoten = txt_hoten.Text;
+                nt.Gioitinh = rad_nam.Checked ? true : false;
+                nt.Ngaysinh = dt_ngaysinh.Value;
+                nt.Diachi = txt_dc.Text;
+                nt.Dienthoai = txt_sdt.Text;
+                nt.Email = txt_email.Text;
+                ctr.NguoiThue(int.Parse(nt.Manguoithue), nt.Hoten, nt.Gioitinh, nt.Ngaysinh, nt.Email, nt.Dienthoai, nt.Diachi, nt.Trangthai, "INSERT");
                 ctr.Disconnect();
                 MessageBox.Show("Thêm mới thành công !!");
-                TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email };
+                TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email, txt_trangthai };
                 foreach (TextBox textBox in textBoxes)
                 {
                     textBox.Text = ""; 
@@ -127,24 +127,24 @@ namespace QLTro.views
         private void btn_sua_Click(object sender, EventArgs e)
         {
             Controls ctr = new controllers.Controls();
-            n = new NguoiThue();
+            nt = new NguoiThue();
             if (IsEmpty(txt_hoten.Text) || IsEmpty(txt_dc.Text) || IsEmpty(txt_sdt.Text) || IsEmpty(txt_email.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                n.MaNguoiThue1 = txt_manguoithue.Text;
-                n.HoTen1 = txt_hoten.Text;
-                n.GioiTinh1 = rad_nam.Checked ? true : false;
-                n.NgaySinh1 = dt_ngaysinh.Value;
-                n.DiaChi1 = txt_dc.Text;
-                n.DienThoai1 = txt_sdt.Text;
-                n.Email1 = txt_email.Text;
-                ctr.NguoiThue(int.Parse(n.MaNguoiThue1), n.HoTen1, n.GioiTinh1, n.NgaySinh1, n.Email1, n.DienThoai1, n.DiaChi1, n.TrangThai1, "UPDATE");
+                nt.Manguoithue = txt_manguoithue.Text;
+                nt.Hoten = txt_hoten.Text;
+                nt.Gioitinh = rad_nam.Checked ? true : false;
+                nt.Ngaysinh = dt_ngaysinh.Value;
+                nt.Diachi = txt_dc.Text;
+                nt.Dienthoai = txt_sdt.Text;
+                nt.Email = txt_email.Text;
+                ctr.NguoiThue(int.Parse(nt.Manguoithue), nt.Hoten, nt.Gioitinh, nt.Ngaysinh, nt.Email, nt.Dienthoai, nt.Diachi, nt.Trangthai, "UPDATE");
                 ctr.Disconnect();
                 MessageBox.Show("Sửa thành công !!");
-                TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email };
+                TextBox[] textBoxes = { txt_manguoithue, txt_hoten, txt_dc, txt_sdt, txt_email, txt_trangthai };
                 foreach (TextBox textBox in textBoxes)
                 {
                     textBox.Text = "";

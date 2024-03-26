@@ -8,27 +8,27 @@ namespace QLTro.models
 {
     class NguoiThue
     {
-        private string MaNguoiThue;
-        private string HoTen;
-        private Boolean GioiTinh;
-        private DateTime NgaySinh;
-        private string DiaChi;
-        private string Email;
-        private string DienThoai;
-        private Boolean TrangThai;
+        private string manguoithue;
+        private string hoten;
+        private Boolean gioitinh;
+        private DateTime ngaysinh;
+        private string diachi;
+        private string email;
+        private string dienthoai;
+        private Boolean trangthai;
 
         public NguoiThue()
         {
             
         }
 
-        public string MaNguoiThue1 { get => MaNguoiThue; set => MaNguoiThue = value; }
-        public string HoTen1 { get => HoTen; set => HoTen = value; }
-        public bool GioiTinh1 { get => GioiTinh; set => GioiTinh = value; }
-        public DateTime NgaySinh1 { get => NgaySinh; set => NgaySinh = value; }
-        public string DiaChi1 { get => DiaChi; set => DiaChi = value; }
-        public string Email1 { get => Email; set => Email = value; }
-        public string DienThoai1 { get => DienThoai; set => DienThoai = value; }
-        public bool TrangThai1 { get => TrangThai; set => TrangThai = value; }
+        public string Manguoithue { get => manguoithue; set => manguoithue = value; }
+        public string Hoten { get => hoten; set => hoten = value; }
+        public bool Gioitinh { get => gioitinh; set => gioitinh = value; }
+        public DateTime Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
+        public string Diachi { get => diachi; set => diachi = value; }
+        public string Email { get => email; set => email = value; }
+        public string Dienthoai { get => dienthoai; set => dienthoai = value; }
+        public bool Trangthai { get => trangthai; set => trangthai = value; }
     }
 }

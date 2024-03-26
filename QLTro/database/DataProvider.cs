@@ -37,6 +37,8 @@ namespace QLTro.database
         {
             con.Close();
         }
+
+        // Common
         public bool Login(string strStore, string username, string password) //strStore = tên store Procedu truyền vào
         {
 
@@ -49,7 +51,6 @@ namespace QLTro.database
             dap.Fill(dt);
             return dt.Rows.Count > 0;
         }
-        // Người Thuê
         public DataTable LoadDataTable(string strView)
         {
             DataTable dt = new DataTable();
@@ -72,6 +73,29 @@ namespace QLTro.database
             cmd.Parameters.Add("@ID", SqlDbType.NVarChar).Value = ID;
             cmd.ExecuteNonQuery();
         }
+
+        public DataTable Search(string strStore, string ten, string key)
+        {
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            switch (key)
+            {
+                case "HOTEN_NGUOITHUE":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "HOTEN_NGUOITHUE";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
+                case "SOPHONG_PHONGTRO":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "SOPHONG_PHONGTRO";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
+            }
+            dap = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+
+        // Người Thuê
         public void NguoiThue(string strStore, int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
         {
             cmd = new SqlCommand(strStore, con);
@@ -104,22 +128,37 @@ namespace QLTro.database
             cmd.ExecuteNonQuery();
         }
 
-        public DataTable Search(string strStore, string ten, string key)
+        // Phòng Trọ
+        public void PhongTro(string strStore, int MaPhong, string SoPhong, string ViTri, decimal DienTich, decimal GiaThue, bool TinhTrangThue, bool TrangThai, string LOAI)
         {
             cmd = new SqlCommand(strStore, con);
             cmd.CommandType = CommandType.StoredProcedure;
-            switch (key)
+            switch (LOAI)
             {
-                case "HOTEN_NGUOITHUE":
-                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "HOTEN_NGUOITHUE";
-                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                case "INSERT":
+                    cmd.Parameters.AddWithValue("@Store", "INSERT");
+                    cmd.Parameters.AddWithValue("@MaPhong", MaPhong);
+                    cmd.Parameters.AddWithValue("@SoPhong", SoPhong);
+                    cmd.Parameters.AddWithValue("@ViTri", ViTri);
+                    cmd.Parameters.AddWithValue("@DienTich", DienTich);
+                    cmd.Parameters.AddWithValue("@GiaThue", GiaThue);
+                    cmd.Parameters.AddWithValue("@TinhTrangThue", TinhTrangThue);
+                    cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
+                    break;
+                case "UPDATE":
+                    cmd.Parameters.AddWithValue("@Store", "UPDATE");
+                    cmd.Parameters.AddWithValue("@MaPhong", MaPhong);
+                    cmd.Parameters.AddWithValue("@SoPhong", SoPhong);
+                    cmd.Parameters.AddWithValue("@ViTri", ViTri);
+                    cmd.Parameters.AddWithValue("@DienTich", DienTich);
+                    cmd.Parameters.AddWithValue("@GiaThue", GiaThue);
+                    cmd.Parameters.AddWithValue("@TinhTrangThue", TinhTrangThue);
+                    cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
                     break;
             }
-            dap = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            dap.Fill(dt);
-            return dt;
+            cmd.ExecuteNonQuery();
         }
+
 
     }
 }

@@ -17,14 +17,6 @@ namespace QLTro
         {
             InitializeComponent();
         }
-        private string tk;
-        public FrmManage(String tentk,String pass)
-        {
-            string tk = tentk;
-            InitializeComponent();
-            label1.Text = "Xin chào " + tentk ;
-
-        }
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
@@ -51,13 +43,19 @@ namespace QLTro
         private void tàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
-            FrmAccount f = new FrmAccount(tk);
+            FrmAccount f = new FrmAccount();
             f.Show();
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmNguoiThue f = new FrmNguoiThue();
+            f.Show();
+        }
+
+        private void phòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPhongTro f = new FrmPhongTro();
             f.Show();
         }
     }

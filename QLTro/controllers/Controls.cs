@@ -19,6 +19,7 @@ namespace QLTro.controllers
         {
             db.Disconnect();
         }
+        // Common
         public bool Login(string username, string password)
         {
             return db.Login(username, password);
@@ -31,14 +32,21 @@ namespace QLTro.controllers
         {
             db.Delete(tenbang, ma);
         }
+        public DataTable Search(string ten, string key)
+        {
+            return db.Search(ten, key);
+        }
+        
         // Người Thuê
         public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
         {
             db.NguoiThue( MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email, TrangThai, LOAI);
         }
-        public DataTable Search(string ten, string key)
+        
+        //Phòng Trọ
+        public void PhongTro(int MaPhong, string SoPhong, string ViTri, decimal DienTich, decimal GiaThue, bool TinhTrangThue, bool TrangThai, string LOAI)
         {
-            return db.Search(ten, key);
+            db.PhongTro( MaPhong, SoPhong, ViTri, DienTich, GiaThue, TinhTrangThue, TrangThai, LOAI);
         }
     }
 }
