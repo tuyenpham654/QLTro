@@ -58,5 +58,17 @@ namespace QLTro
             FrmPhongTro f = new FrmPhongTro();
             f.Show();
         }
+
+        private void giớiThiệuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAbout f = new FrmAbout();
+            f.Show();
+        }
+
+        private void giáĐiệnNướcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGiaDienNuoc f = new FrmGiaDienNuoc();
+            f.Show();
+        }
     }
 }

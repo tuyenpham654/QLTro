@@ -426,7 +426,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmNguoiThue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nguoi Thue";
+            this.Text = "Người Thuê";
             this.groupBox1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

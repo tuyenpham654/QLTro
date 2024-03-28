@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +50,11 @@ namespace QLTro.database
         public void PhongTro(int MaPhong, string SoPhong, string ViTri, decimal DienTich, decimal GiaThue, bool TinhTrangThue, bool TrangThai, string LOAI)
         {
             pr.PhongTro("sp_PhongTro", MaPhong, SoPhong, ViTri, DienTich, GiaThue, TinhTrangThue, TrangThai, LOAI);
+        }
+        //Giá Điện Nước
+        public void GiaDienNuoc( int GiaDien, int GiaNuoc, DateTime NgayApDung, bool TrangThai, string LOAI)
+        {
+            pr.GiaDienNuoc("sp_GiaDienNuoc", GiaDien, GiaNuoc, NgayApDung, TrangThai, LOAI);
         }
 
     }

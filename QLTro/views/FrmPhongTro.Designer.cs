@@ -404,7 +404,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPhongTro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Phong";
+            this.Text = "Phòng Trọ";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);

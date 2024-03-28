@@ -48,5 +48,11 @@ namespace QLTro.controllers
         {
             db.PhongTro( MaPhong, SoPhong, ViTri, DienTich, GiaThue, TinhTrangThue, TrangThai, LOAI);
         }
+
+        //Giá Điện Nước
+        public void GiaDienNuoc(int GiaDien, int GiaNuoc, DateTime NgayApDung, bool TrangThai, string LOAI)
+        {
+            db.GiaDienNuoc( GiaDien, GiaNuoc, NgayApDung, TrangThai, LOAI);
+        }
     }
 }

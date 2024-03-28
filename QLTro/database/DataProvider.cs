@@ -159,6 +159,22 @@ namespace QLTro.database
             cmd.ExecuteNonQuery();
         }
 
-
+        // Giá Điện Nước
+        public void GiaDienNuoc(string strStore, int GiaDien, int GiaNuoc, DateTime NgayApDung, bool TrangThai, string LOAI)
+        {
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            switch (LOAI)
+            {
+                case "INSERT":
+                    cmd.Parameters.AddWithValue("@Store", "INSERT");
+                    cmd.Parameters.AddWithValue("@GiaDien", GiaDien);
+                    cmd.Parameters.AddWithValue("@GiaNuoc", GiaNuoc);
+                    cmd.Parameters.AddWithValue("@NgayApDung", NgayApDung);
+                    cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
+                    break;
+            }
+            cmd.ExecuteNonQuery();
+        }
     }
 }
