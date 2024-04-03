@@ -13,9 +13,10 @@ namespace QLTro
 {
     public partial class FrmManage : Form
     {
-        public FrmManage()
+        public FrmManage(string tk)
         {
             InitializeComponent();
+            label1.Text = "Xin chào " + tk;
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -42,7 +43,7 @@ namespace QLTro
 
         private void tàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             FrmAccount f = new FrmAccount();
             f.Show();
         }

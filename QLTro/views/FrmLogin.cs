@@ -83,7 +83,8 @@ namespace QLTro
         {
             if (ctr.Login(txt_username.Text, txt_password.Text))
             {
-                FrmManage f = new FrmManage();
+                string tk = txt_username.Text;
+                FrmManage f = new FrmManage( tk);
                 this.Hide();
                 f.ShowDialog();
             }

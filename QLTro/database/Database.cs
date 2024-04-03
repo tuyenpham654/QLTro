@@ -56,6 +56,11 @@ namespace QLTro.database
         {
             pr.GiaDienNuoc("sp_GiaDienNuoc", GiaDien, GiaNuoc, NgayApDung, TrangThai, LOAI);
         }
+        public void Account(int MaTK, string UserName, string Password, string Loai, string LOAI)
+        {
+            pr.Account("sp_Account", MaTK, UserName, Password, Loai, LOAI);
+        }
+
 
     }
 }

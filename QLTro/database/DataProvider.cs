@@ -176,5 +176,29 @@ namespace QLTro.database
             }
             cmd.ExecuteNonQuery();
         }
+        //Account
+        public void Account(string strStore, int MaTK, string Username, string Password,string Loai, string LOAI)
+        {
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            switch (LOAI)
+            {
+                case "INSERT":
+                    cmd.Parameters.AddWithValue("@Store", "INSERT");
+                    cmd.Parameters.AddWithValue("@matk", MaTK);
+                    cmd.Parameters.AddWithValue("@username", Username);
+                    cmd.Parameters.AddWithValue("@password", Password);
+                    cmd.Parameters.AddWithValue("@loai", Loai);
+                    break;
+                case "UPDATE":
+                    cmd.Parameters.AddWithValue("@Store", "UPDATE");
+                    cmd.Parameters.AddWithValue("@matk", MaTK);
+                    cmd.Parameters.AddWithValue("@username", Username);
+                    cmd.Parameters.AddWithValue("@password", Password);
+                    cmd.Parameters.AddWithValue("@loai", Loai);
+                    break;
+            }
+            cmd.ExecuteNonQuery();
+        }
     }
 }

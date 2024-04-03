@@ -54,5 +54,10 @@ namespace QLTro.controllers
         {
             db.GiaDienNuoc( GiaDien, GiaNuoc, NgayApDung, TrangThai, LOAI);
         }
+        //Account
+        public void Account(int MaTK, string UserName, string Password,  string Loai, string LOAI)
+        {
+            db.Account(MaTK, UserName, Password, Loai, LOAI);
+        }
     }
 }
