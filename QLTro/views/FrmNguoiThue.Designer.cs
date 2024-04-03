@@ -50,7 +50,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_close = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_search = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_close = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,6 +78,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1482, 853);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Quan ly Nguoi Thue";
             // 
             // panel4
             // 
@@ -301,18 +302,6 @@
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
-            // btn_close
-            // 
-            this.btn_close.AutoSize = true;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.Location = new System.Drawing.Point(1293, 32);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(140, 40);
-            this.btn_close.TabIndex = 2;
-            this.btn_close.Text = "Đóng";
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
             // btn_them
             // 
             this.btn_them.AutoSize = true;
@@ -338,7 +327,7 @@
             this.groupBox2.Size = new System.Drawing.Size(1476, 373);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Quản Lý Người Thuê";
+            this.groupBox2.Text = "Danh sach Nguoi Thue";
             // 
             // txt_timkiem
             // 
@@ -373,7 +362,6 @@
             this.dgv_nguoithue.Size = new System.Drawing.Size(1464, 280);
             this.dgv_nguoithue.TabIndex = 0;
             this.dgv_nguoithue.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nguoithue_CellClick);
-            this.dgv_nguoithue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nguoithue_CellContentClick);
             // 
             // btn_refresh
             // 
@@ -408,6 +396,18 @@
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm kiếm ";
+            // 
+            // btn_close
+            // 
+            this.btn_close.AutoSize = true;
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.Location = new System.Drawing.Point(1293, 32);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(140, 40);
+            this.btn_close.TabIndex = 2;
+            this.btn_close.Text = "Đóng";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // FrmNguoiThue
             // 
