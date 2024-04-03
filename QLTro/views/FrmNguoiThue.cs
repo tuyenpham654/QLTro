@@ -170,5 +170,10 @@ namespace QLTro.views
         {
             this.Close();
         }
+
+        private void dgv_nguoithue_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

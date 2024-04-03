@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,13 +17,17 @@ namespace QLTro
         public FrmManage()
         {
             InitializeComponent();
+
         }
-        private string tk;
-        public FrmManage(String tentk,String pass)
+        public string tk;
+        public FrmManage(string tentk)
         {
-            string tk = tentk;
-            InitializeComponent();
-            label1.Text = "Xin chào " + tentk ;
+           
+                
+                tk = tentk;
+                InitializeComponent();
+                label1.Text = "Xin chào " + tentk ;
+           
 
         }
 
@@ -56,6 +61,12 @@ namespace QLTro
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNguoiThue f = new FrmNguoiThue();
+            f.Show();
+        }
+
+        private void kháchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmNguoiThue f = new FrmNguoiThue();
             f.Show();

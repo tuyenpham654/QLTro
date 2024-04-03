@@ -8,19 +8,26 @@ namespace QLTro.models
 {
     class Account
     {
-        private int MaTK;
+        private string MaTK;
         private string username;
         private string password;
+        private string loai;
 
-        public Account(int maTK, string username, string password)
+        public Account()
+        {
+        }
+
+        public Account(string maTK, string username, string password, string loai)
         {
             MaTK = maTK;
             this.username = username;
             this.password = password;
+            this.loai = loai;
         }
 
-        public int MaTK1 { get => MaTK; set => MaTK = value; }
+        public string MaTK1 { get => MaTK; set => MaTK = value; }
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
+        public string Loai { get => loai; set => loai = value; }
     }
 }
