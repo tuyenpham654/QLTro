@@ -1,9 +1,12 @@
 ﻿using System;
+using QLTro.models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace QLTro.database
 {
@@ -43,6 +46,10 @@ namespace QLTro.database
         public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
         {
             pr.NguoiThue("sp_NguoiThue", MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email,TrangThai, LOAI);
+        }
+        public void Account(int MaTK, string UserName,string Password, string Loai,string LOAI)
+        {
+            pr.Account("sp_Account", MaTK,UserName,Password,Loai,LOAI);
         }
 
     }
