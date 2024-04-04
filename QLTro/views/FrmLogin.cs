@@ -67,7 +67,7 @@ namespace QLTro
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            MessageBox.Show("Bạn vui lòng liên hệ quản lý");
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace QLTro
         {
 
 
-            if (ctr.Login(txt_username.Text, txt_password.Text))
+            if (ctr.Login(txt_username.Text, txt_password.Text)==true)
             {
 
                 string tk = txt_username.Text;

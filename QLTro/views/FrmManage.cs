@@ -71,5 +71,11 @@ namespace QLTro
             FrmGiaDienNuoc f = new FrmGiaDienNuoc();
             f.Show();
         }
+
+        private void phòngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmSearchPhongTro f = new FrmSearchPhongTro();
+            f.Show();
+        }
     }
 }

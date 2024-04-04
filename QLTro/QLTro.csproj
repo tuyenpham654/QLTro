@@ -68,6 +68,12 @@
     <Compile Include="views\FrmAccount.Designer.cs">
       <DependentUpon>FrmAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmDetailPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmDetailPhong.Designer.cs">
+      <DependentUpon>FrmDetailPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\FrmGiaDienNuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +107,20 @@
     <Compile Include="views\FrmPhongTro.Designer.cs">
       <DependentUpon>FrmPhongTro.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmSearchPhongTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmSearchPhongTro.Designer.cs">
+      <DependentUpon>FrmSearchPhongTro.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="views\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmAccount.resx">
       <DependentUpon>FrmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmDetailPhong.resx">
+      <DependentUpon>FrmDetailPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmGiaDienNuoc.resx">
       <DependentUpon>FrmGiaDienNuoc.cs</DependentUpon>
@@ -130,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmPhongTro.resx">
       <DependentUpon>FrmPhongTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmSearchPhongTro.resx">
+      <DependentUpon>FrmSearchPhongTro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
