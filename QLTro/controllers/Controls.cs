@@ -59,5 +59,10 @@ namespace QLTro.controllers
         {
             db.Account(MaTK, UserName, Password, Loai, LOAI);
         }
+        public DataTable Searchdtp(string ten, string key)
+        {
+            return db.Searchdtp(ten, key);
+        }
+
     }
 }

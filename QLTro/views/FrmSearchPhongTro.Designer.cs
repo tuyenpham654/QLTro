@@ -87,7 +87,7 @@
             this.dgv_searchphong.RowTemplate.Height = 24;
             this.dgv_searchphong.Size = new System.Drawing.Size(1500, 500);
             this.dgv_searchphong.TabIndex = 7;
-            this.dgv_searchphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_searchphong_CellContentClick);
+            this.dgv_searchphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_searchphong_CellClick);
             this.dgv_searchphong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_searchphong_CellContentClick);
             // 
             // FrmSearchPhongTro

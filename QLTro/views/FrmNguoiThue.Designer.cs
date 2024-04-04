@@ -383,6 +383,7 @@
             this.dgv_nguoithue.Size = new System.Drawing.Size(1464, 280);
             this.dgv_nguoithue.TabIndex = 0;
             this.dgv_nguoithue.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nguoithue_CellClick);
+            this.dgv_nguoithue.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nguoithue_CellContentClick);
             // 
             // btn_refresh
             // 

@@ -67,6 +67,32 @@ namespace QLTro.database
             }
             return dt;
         }
+        public DataTable LoadDataTabledtp(string strView,string ma)
+        {
+            DataTable dt = new DataTable();
+            string strQuery = "SELECT * FROM " + strView+ " where MaPhong "+ma;
+            using (SqlCommand cmd = new SqlCommand(strQuery, con))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (SqlDataAdapter dap = new SqlDataAdapter(cmd))
+                {
+                    dap.Fill(dt);
+                }
+            }
+            foreach (DataRow row in dt.Rows)
+            {
+                // Lấy giá trị từ cột HOTEN_NGUOITHUE
+                string sophong = row["SoPhong"].ToString();
+                string maphong = row["MaPhong"].ToString();
+                string dientich = row["DienTich"].ToString();
+                string giathue = row["GiaThue"].ToString();
+                string vitri = row["ViTri"].ToString();
+                string tinhtrangthue = row["TinhTrangThue"].ToString();
+                string trangthai = row["TrangThai"].ToString();
+                string hoten = row["HoTen"].ToString();
+            }
+            return dt;
+        }
         public void Delete(string strStore, string tenbang, string ID)
         {
             cmd = new SqlCommand(strStore, con);
@@ -100,6 +126,7 @@ namespace QLTro.database
             dap.Fill(dt);
             return dt;
         }
+       
 
         // Người Thuê
         public void NguoiThue(string strStore, int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)

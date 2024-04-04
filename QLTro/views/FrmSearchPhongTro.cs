@@ -43,7 +43,16 @@ namespace QLTro.views
     
         private void dgv_searchphong_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            string ma = dgv_searchphong.CurrentRow.Cells[0].Value.ToString();
+            FrmDetailPhong f = new FrmDetailPhong(ma);
+            f.ShowDialog();
+        }
+
+        private void dgv_searchphong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ma = dgv_searchphong.CurrentRow.Cells[0].Value.ToString();
+            FrmDetailPhong f = new FrmDetailPhong(ma);
+            f.ShowDialog();
         }
     }
 }
