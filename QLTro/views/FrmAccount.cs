@@ -16,7 +16,7 @@ namespace QLTro
 {
     public partial class FrmAccount : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=STEVE;Initial Catalog=Quan_Ly_Sinh_Vien;User ID=sa;Password=123456;Integrated Security=True");
+        
         public FrmAccount()
         {
             InitializeComponent();
@@ -138,6 +138,11 @@ namespace QLTro
         private void btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgv_account_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

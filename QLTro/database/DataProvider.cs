@@ -49,7 +49,9 @@ namespace QLTro.database
             DataTable dt = new DataTable();
             dap = new SqlDataAdapter(cmd);
             dap.Fill(dt);
-            return dt.Rows.Count > 0;
+            if (dt.Rows.Count > 0)
+                return true;
+            return false;
         }
         public DataTable LoadDataTable(string strView)
         {

@@ -81,16 +81,20 @@ namespace QLTro
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+
+
             if (ctr.Login(txt_username.Text, txt_password.Text))
             {
+
                 string tk = txt_username.Text;
-                FrmManage f = new FrmManage( tk);
+                FrmManage f = new FrmManage(tk);
                 this.Hide();
                 f.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
     }

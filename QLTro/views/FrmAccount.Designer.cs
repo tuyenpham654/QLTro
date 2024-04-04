@@ -40,7 +40,6 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_account)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +55,7 @@
             this.dgv_account.Size = new System.Drawing.Size(665, 370);
             this.dgv_account.TabIndex = 0;
             this.dgv_account.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_account_CellClick);
+            this.dgv_account.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_account_CellContentClick);
             // 
             // label1
             // 
@@ -152,15 +152,6 @@
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // btn_thoat
             // 
             this.btn_thoat.Location = new System.Drawing.Point(533, 125);
@@ -177,7 +168,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 562);
             this.Controls.Add(this.btn_thoat);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_them);
@@ -213,7 +203,6 @@
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_sua;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_thoat;
     }
 }
