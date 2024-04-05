@@ -232,5 +232,10 @@ namespace QLTro.views
                 textBox.Text = "";
             }
         }
+
+        private void dgv_phongtro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

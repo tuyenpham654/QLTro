@@ -137,6 +137,7 @@
             this.dgv_phongtro.Size = new System.Drawing.Size(1464, 280);
             this.dgv_phongtro.TabIndex = 0;
             this.dgv_phongtro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phongtro_CellClick);
+            this.dgv_phongtro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phongtro_CellContentClick);
             // 
             // btn_refresh
             // 

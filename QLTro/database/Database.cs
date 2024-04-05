@@ -60,10 +60,7 @@ namespace QLTro.database
         {
             pr.Account("sp_Account", MaTK, UserName, Password, Loai, LOAI);
         }
-        public DataTable LoadDataTabledtp(string strView, string ma)
-        {
-            return pr.LoadDataTabledtp(strView, ma);
-        }
+
 
 
     }

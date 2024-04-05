@@ -30,6 +30,10 @@ namespace QLTro
         private void LoadDGV()
         {
             dgv_account.DataSource = ctr.LoadDataTable("vw_Account");
+
+            List<DataRow> accountList = ctr.LoadDataTable("vw_Account").AsEnumerable().ToList();
+
+
         }
 
 
