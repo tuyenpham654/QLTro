@@ -1,4 +1,5 @@
-﻿using QLTro.views;
+﻿using QLTro.controllers;
+using QLTro.views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,16 @@ namespace QLTro
 {
     public partial class FrmManage : Form
     {
+        Controls ctr = new controllers.Controls();
         public FrmManage(string tk)
         {
             InitializeComponent();
             label1.Text = "Xin chào " + tk;
+            loadDGV();
+        }
+        public void loadDGV()
+        {
+            dgv_quahan.DataSource = ctr.LoadDataTable("vw_QuaHan");   
         }
 
         private void btn_exit_Click(object sender, EventArgs e)
@@ -76,6 +83,16 @@ namespace QLTro
         {
             FrmSearchPhongTro f = new FrmSearchPhongTro();
             f.Show();
+        }
+
+        private void hợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kháchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

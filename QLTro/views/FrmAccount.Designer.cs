@@ -47,7 +47,9 @@
             // dgv_account
             // 
             this.dgv_account.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_account.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_account.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_account.GridColor = System.Drawing.SystemColors.Window;
             this.dgv_account.Location = new System.Drawing.Point(0, 191);
             this.dgv_account.Name = "dgv_account";
             this.dgv_account.RowHeadersWidth = 51;

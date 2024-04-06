@@ -107,6 +107,12 @@
     <Compile Include="views\FrmPhongTro.Designer.cs">
       <DependentUpon>FrmPhongTro.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmSearchKhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmSearchKhach.Designer.cs">
+      <DependentUpon>FrmSearchKhach.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\FrmSearchPhongTro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmPhongTro.resx">
       <DependentUpon>FrmPhongTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmSearchKhach.resx">
+      <DependentUpon>FrmSearchKhach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmSearchPhongTro.resx">
       <DependentUpon>FrmSearchPhongTro.cs</DependentUpon>

@@ -81,6 +81,7 @@
             // 
             this.dgv_searchphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_searchphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_searchphong.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_searchphong.Location = new System.Drawing.Point(3, 155);
             this.dgv_searchphong.Name = "dgv_searchphong";
             this.dgv_searchphong.RowHeadersWidth = 51;
