@@ -68,10 +68,10 @@
             // 
             this.txt_trangthai.Enabled = false;
             this.txt_trangthai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_trangthai.Location = new System.Drawing.Point(575, 181);
+            this.txt_trangthai.Location = new System.Drawing.Point(556, 181);
             this.txt_trangthai.Name = "txt_trangthai";
             this.txt_trangthai.ReadOnly = true;
-            this.txt_trangthai.Size = new System.Drawing.Size(168, 27);
+            this.txt_trangthai.Size = new System.Drawing.Size(201, 27);
             this.txt_trangthai.TabIndex = 10;
             // 
             // label4
@@ -88,10 +88,10 @@
             // 
             this.txt_tinhtrangthue.Enabled = false;
             this.txt_tinhtrangthue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tinhtrangthue.Location = new System.Drawing.Point(575, 126);
+            this.txt_tinhtrangthue.Location = new System.Drawing.Point(556, 126);
             this.txt_tinhtrangthue.Name = "txt_tinhtrangthue";
             this.txt_tinhtrangthue.ReadOnly = true;
-            this.txt_tinhtrangthue.Size = new System.Drawing.Size(168, 27);
+            this.txt_tinhtrangthue.Size = new System.Drawing.Size(201, 27);
             this.txt_tinhtrangthue.TabIndex = 11;
             // 
             // label8
@@ -168,10 +168,10 @@
             // 
             this.txt_hoten.Enabled = false;
             this.txt_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_hoten.Location = new System.Drawing.Point(575, 226);
+            this.txt_hoten.Location = new System.Drawing.Point(556, 226);
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.ReadOnly = true;
-            this.txt_hoten.Size = new System.Drawing.Size(168, 27);
+            this.txt_hoten.Size = new System.Drawing.Size(201, 27);
             this.txt_hoten.TabIndex = 10;
             // 
             // btn_thoat
@@ -201,9 +201,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(30, 279);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 20);
+            this.label10.Size = new System.Drawing.Size(123, 20);
             this.label10.TabIndex = 6;
-            this.label10.Text = "Ngày  Bắt Đầu";
+            this.label10.Text = "Ngày  Bắt Đầu:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
@@ -212,9 +212,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(392, 279);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 20);
+            this.label11.Size = new System.Drawing.Size(124, 20);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Ngày Kết Thúc";
+            this.label11.Text = "Ngày Kết Thúc:";
             // 
             // label12
             // 
@@ -230,20 +230,20 @@
             // 
             this.txt_mahopdong.Enabled = false;
             this.txt_mahopdong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mahopdong.Location = new System.Drawing.Point(575, 69);
+            this.txt_mahopdong.Location = new System.Drawing.Point(556, 69);
             this.txt_mahopdong.Name = "txt_mahopdong";
             this.txt_mahopdong.ReadOnly = true;
-            this.txt_mahopdong.Size = new System.Drawing.Size(168, 27);
+            this.txt_mahopdong.Size = new System.Drawing.Size(201, 27);
             this.txt_mahopdong.TabIndex = 11;
             // 
             // txt_ngayketthuc
             // 
             this.txt_ngayketthuc.Enabled = false;
             this.txt_ngayketthuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ngayketthuc.Location = new System.Drawing.Point(575, 272);
+            this.txt_ngayketthuc.Location = new System.Drawing.Point(556, 272);
             this.txt_ngayketthuc.Name = "txt_ngayketthuc";
             this.txt_ngayketthuc.ReadOnly = true;
-            this.txt_ngayketthuc.Size = new System.Drawing.Size(168, 27);
+            this.txt_ngayketthuc.Size = new System.Drawing.Size(201, 27);
             this.txt_ngayketthuc.TabIndex = 10;
             // 
             // txt_ngaybatdau
@@ -253,7 +253,7 @@
             this.txt_ngaybatdau.Location = new System.Drawing.Point(176, 272);
             this.txt_ngaybatdau.Name = "txt_ngaybatdau";
             this.txt_ngaybatdau.ReadOnly = true;
-            this.txt_ngaybatdau.Size = new System.Drawing.Size(168, 27);
+            this.txt_ngaybatdau.Size = new System.Drawing.Size(201, 27);
             this.txt_ngaybatdau.TabIndex = 10;
             // 
             // txt_sophong
@@ -263,7 +263,7 @@
             this.txt_sophong.Location = new System.Drawing.Point(176, 69);
             this.txt_sophong.Name = "txt_sophong";
             this.txt_sophong.ReadOnly = true;
-            this.txt_sophong.Size = new System.Drawing.Size(168, 27);
+            this.txt_sophong.Size = new System.Drawing.Size(201, 27);
             this.txt_sophong.TabIndex = 11;
             // 
             // txt_dientich
@@ -273,7 +273,7 @@
             this.txt_dientich.Location = new System.Drawing.Point(176, 126);
             this.txt_dientich.Name = "txt_dientich";
             this.txt_dientich.ReadOnly = true;
-            this.txt_dientich.Size = new System.Drawing.Size(168, 27);
+            this.txt_dientich.Size = new System.Drawing.Size(201, 27);
             this.txt_dientich.TabIndex = 11;
             // 
             // txt_giathue
@@ -283,7 +283,7 @@
             this.txt_giathue.Location = new System.Drawing.Point(176, 181);
             this.txt_giathue.Name = "txt_giathue";
             this.txt_giathue.ReadOnly = true;
-            this.txt_giathue.Size = new System.Drawing.Size(168, 27);
+            this.txt_giathue.Size = new System.Drawing.Size(201, 27);
             this.txt_giathue.TabIndex = 11;
             // 
             // txt_vitri
@@ -293,7 +293,7 @@
             this.txt_vitri.Location = new System.Drawing.Point(176, 226);
             this.txt_vitri.Name = "txt_vitri";
             this.txt_vitri.ReadOnly = true;
-            this.txt_vitri.Size = new System.Drawing.Size(168, 27);
+            this.txt_vitri.Size = new System.Drawing.Size(201, 27);
             this.txt_vitri.TabIndex = 11;
             // 
             // txt_maphong

@@ -54,5 +54,10 @@ namespace QLTro.views
             FrmDetailPhong f = new FrmDetailPhong(ma);
             f.ShowDialog();
         }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            LoadDGV();
+        }
     }
 }

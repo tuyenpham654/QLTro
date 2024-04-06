@@ -99,6 +99,14 @@ namespace QLTro.database
                     cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "DT_PHONGTRO";
                     cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
                     break;
+                case "TIMKIIEM_KHACH":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "TIMKIIEM_KHACH";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
+                case "DT_KHACH":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "DT_KHACH";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
             }
             dap = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

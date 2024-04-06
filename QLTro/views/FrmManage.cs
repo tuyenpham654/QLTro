@@ -92,7 +92,8 @@ namespace QLTro
 
         private void kháchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmSearchKhach f = new FrmSearchKhach();
+            f.Show();
         }
     }
 }

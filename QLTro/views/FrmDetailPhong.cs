@@ -21,7 +21,7 @@ namespace QLTro.views
         {
             InitializeComponent();
             LoadDGV(ma);
-            //Loadtxtbox();
+
         }
         private void LoadDGV(string mp)
         {
@@ -81,50 +81,7 @@ namespace QLTro.views
 
             }
         }
-        private void Loadtxtbox()
-        {
-
-            txt_maphong.Text = dgv_detail.CurrentRow.Cells[0].Value.ToString();
-            txt_sophong.Text = dgv_detail.CurrentRow.Cells[1].Value.ToString();
-            txt_vitri.Text = dgv_detail.CurrentRow.Cells[2].Value.ToString();
-            if (dgv_detail.CurrentRow.Cells[3].Value != null)
-            {
-                if (dgv_detail.CurrentRow.Cells[3].Value.ToString() == "active")
-                {
-                    txt_trangthai.Text = "active";
-                }
-                else
-                {
-                    txt_trangthai.Text = "passive";
-                }
-            }
-            else
-            {
-                txt_trangthai.Text = string.Empty;
-            }
-            if (dgv_detail.CurrentRow.Cells[4].Value != null)
-            {
-                if (dgv_detail.CurrentRow.Cells[4].Value.ToString() == "active")
-                {
-                    txt_tinhtrangthue.Text = "active";
-                }
-                else
-                {
-                    txt_tinhtrangthue.Text = "passive";
-                }
-            }
-            else
-            {
-                txt_tinhtrangthue.Text = string.Empty;
-            }
-            txt_hoten.Text = dgv_detail.CurrentRow.Cells[5].Value.ToString();
-            txt_mahopdong.Text = dgv_detail.CurrentRow.Cells[6].Value.ToString();
-            txt_ngaybatdau.Text = dgv_detail.CurrentRow.Cells[7].Value.ToString();
-            txt_ngayketthuc.Text = dgv_detail.CurrentRow.Cells[8].Value.ToString();
-
-
-        }
-
+        
         private void btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();

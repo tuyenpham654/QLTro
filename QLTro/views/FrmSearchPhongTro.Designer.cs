@@ -54,6 +54,7 @@
             this.btn_refresh.TabIndex = 5;
             this.btn_refresh.Text = "Làm mới";
             this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // btn_search
             // 
@@ -79,9 +80,11 @@
             // 
             // dgv_searchphong
             // 
+            this.dgv_searchphong.AllowUserToAddRows = false;
+            this.dgv_searchphong.AllowUserToDeleteRows = false;
             this.dgv_searchphong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_searchphong.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_searchphong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_searchphong.GridColor = System.Drawing.SystemColors.Control;
             this.dgv_searchphong.Location = new System.Drawing.Point(3, 155);
             this.dgv_searchphong.Name = "dgv_searchphong";
             this.dgv_searchphong.RowHeadersWidth = 51;
