@@ -287,6 +287,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(788, 405);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.dgv_khachdt);
@@ -311,7 +312,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDetailKhach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetailKhach";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_khachdt)).EndInit();
             this.ResumeLayout(false);

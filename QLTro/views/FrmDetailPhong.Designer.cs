@@ -336,7 +336,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDetailPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetailPhong";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).EndInit();
             this.ResumeLayout(false);
