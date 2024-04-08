@@ -67,7 +67,21 @@ namespace QLTro.database
             }
             return dt;
         }
-     
+        public DataTable LoadComboBoxKhach(string strView)
+        {
+            DataTable dt = new DataTable();
+            string strQuery = "SELECT [Mã Người Thuê], [Họ Tên] FROM " + strView;
+            using (SqlCommand cmd = new SqlCommand(strQuery, con))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (SqlDataAdapter dap = new SqlDataAdapter(cmd))
+                {
+                    dap.Fill(dt);
+                }
+            }
+            return dt;
+        }
+
         public void Delete(string strStore, string tenbang, string ID)
         {
             cmd = new SqlCommand(strStore, con);

@@ -31,6 +31,10 @@ namespace QLTro.database
         {
             return pr.LoadDataTable(strView);
         }
+        public DataTable LoadComboBoxKhach(string strView)
+        {
+            return pr.LoadComboBoxKhach(strView);
+        }
         // Xoá
         public void Delete(string tenbang, string ID)
         {

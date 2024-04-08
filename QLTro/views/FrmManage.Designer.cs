@@ -69,7 +69,7 @@
             this.trợGiúpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1080, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1080, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -133,7 +133,7 @@
             this.hợpĐồngToolStripMenuItem,
             this.hóaĐơnToolStripMenuItem});
             this.kinhDoanhToolStripMenuItem.Name = "kinhDoanhToolStripMenuItem";
-            this.kinhDoanhToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.kinhDoanhToolStripMenuItem.Size = new System.Drawing.Size(100, 26);
             this.kinhDoanhToolStripMenuItem.Text = "Kinh Doanh";
             // 
             // hợpĐồngToolStripMenuItem
@@ -146,8 +146,9 @@
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
+            this.hóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnToolStripMenuItem_Click);
             // 
             // traCứuToolStripMenuItem
             // 
@@ -161,14 +162,14 @@
             // phòngToolStripMenuItem1
             // 
             this.phòngToolStripMenuItem1.Name = "phòngToolStripMenuItem1";
-            this.phòngToolStripMenuItem1.Size = new System.Drawing.Size(199, 26);
+            this.phòngToolStripMenuItem1.Size = new System.Drawing.Size(134, 26);
             this.phòngToolStripMenuItem1.Text = "Phòng";
             this.phòngToolStripMenuItem1.Click += new System.EventHandler(this.phòngToolStripMenuItem1_Click);
             // 
             // kháchToolStripMenuItem
             // 
             this.kháchToolStripMenuItem.Name = "kháchToolStripMenuItem";
-            this.kháchToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.kháchToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
             this.kháchToolStripMenuItem.Text = "Khách";
             this.kháchToolStripMenuItem.Click += new System.EventHandler(this.kháchToolStripMenuItem_Click);
             // 

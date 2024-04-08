@@ -88,11 +88,19 @@ namespace QLTro
         private void hợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            FrmHopDong f = new FrmHopDong();
+            f.Show();
         }
 
         private void kháchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSearchKhach f = new FrmSearchKhach();
+            f.Show();
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHoaDon f = new FrmHoaDon();
             f.Show();
         }
     }

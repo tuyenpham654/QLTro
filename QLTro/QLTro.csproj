@@ -86,6 +86,18 @@
     <Compile Include="views\FrmGiaDienNuoc.Designer.cs">
       <DependentUpon>FrmGiaDienNuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmHoaDon.Designer.cs">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\FrmHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmHopDong.Designer.cs">
+      <DependentUpon>FrmHopDong.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\FrmManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmGiaDienNuoc.resx">
       <DependentUpon>FrmGiaDienNuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmHoaDon.resx">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmHopDong.resx">
+      <DependentUpon>FrmHopDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmManage.resx">
       <DependentUpon>FrmManage.cs</DependentUpon>

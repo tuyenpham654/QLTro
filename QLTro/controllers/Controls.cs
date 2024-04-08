@@ -28,6 +28,10 @@ namespace QLTro.controllers
         {
             return db.LoadDataTable(strView);
         }
+        public DataTable LoadComboBoxKhach(string strView)
+        {
+            return db.LoadComboBoxKhach(strView);
+        }
         public void Delete(string tenbang, string ma)
         {
             db.Delete(tenbang, ma);
