@@ -101,7 +101,7 @@ namespace QLTro
         private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmHoaDon f = new FrmHoaDon();
-            f.Show();
+            f.Show();                                                                                                                                                      
         }
     }
 }

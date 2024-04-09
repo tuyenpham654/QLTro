@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
             this.dt_ngaysinh = new System.Windows.Forms.DateTimePicker();
             this.txt_giathue = new System.Windows.Forms.TextBox();
             this.txt_mahopdong = new System.Windows.Forms.TextBox();
-            this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_hopdong = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_refresh = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btn_search = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txt_maphong = new System.Windows.Forms.TextBox();
+            this.txt_manguoithue = new System.Windows.Forms.TextBox();
+            this.cb_nguoithue = new System.Windows.Forms.ComboBox();
+            this.cb_phong = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cb_phong = new System.Windows.Forms.ComboBox();
-            this.cb_nguoithue = new System.Windows.Forms.ComboBox();
-            this.txt_manguoithue = new System.Windows.Forms.TextBox();
-            this.txt_maphong = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_hopdong)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_refresh = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
+            this.dgv_hopdong = new System.Windows.Forms.DataGridView();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_hopdong)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_xoa
@@ -126,48 +126,6 @@
             this.txt_mahopdong.Size = new System.Drawing.Size(168, 27);
             this.txt_mahopdong.TabIndex = 1;
             // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timkiem.Location = new System.Drawing.Point(355, 36);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(300, 27);
-            this.txt_timkiem.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dgv_hopdong);
-            this.panel1.Location = new System.Drawing.Point(6, 87);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1464, 280);
-            this.panel1.TabIndex = 3;
-            // 
-            // dgv_hopdong
-            // 
-            this.dgv_hopdong.AllowUserToAddRows = false;
-            this.dgv_hopdong.AllowUserToDeleteRows = false;
-            this.dgv_hopdong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_hopdong.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_hopdong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_hopdong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_hopdong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_hopdong.Location = new System.Drawing.Point(0, 0);
-            this.dgv_hopdong.Name = "dgv_hopdong";
-            this.dgv_hopdong.ReadOnly = true;
-            this.dgv_hopdong.RowHeadersVisible = false;
-            this.dgv_hopdong.RowHeadersWidth = 51;
-            this.dgv_hopdong.RowTemplate.Height = 24;
-            this.dgv_hopdong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_hopdong.Size = new System.Drawing.Size(1464, 280);
-            this.dgv_hopdong.TabIndex = 0;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -177,7 +135,6 @@
             this.label7.Size = new System.Drawing.Size(117, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "Mã Hợp Đồng:";
-
             // 
             // btn_sua
             // 
@@ -190,28 +147,6 @@
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
-            // 
-            // btn_refresh
-            // 
-            this.btn_refresh.AutoSize = true;
-            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refresh.Location = new System.Drawing.Point(806, 33);
-            this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.Size = new System.Drawing.Size(87, 30);
-            this.btn_refresh.TabIndex = 2;
-            this.btn_refresh.Text = "Làm mới";
-            this.btn_refresh.UseVisualStyleBackColor = true;
-            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(267, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tìm kiếm ";
             // 
             // label9
             // 
@@ -253,18 +188,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Giá thuê:";
             // 
-            // btn_search
-            // 
-            this.btn_search.AutoSize = true;
-            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.Location = new System.Drawing.Point(687, 34);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(87, 30);
-            this.btn_search.TabIndex = 2;
-            this.btn_search.Text = "Tìm kiếm";
-            this.btn_search.UseVisualStyleBackColor = true;
-            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.txt_maphong);
@@ -285,6 +208,55 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1473, 346);
             this.panel4.TabIndex = 4;
+            // 
+            // txt_maphong
+            // 
+            this.txt_maphong.Location = new System.Drawing.Point(877, 59);
+            this.txt_maphong.Name = "txt_maphong";
+            this.txt_maphong.Size = new System.Drawing.Size(337, 22);
+            this.txt_maphong.TabIndex = 6;
+            // 
+            // txt_manguoithue
+            // 
+            this.txt_manguoithue.Location = new System.Drawing.Point(187, 115);
+            this.txt_manguoithue.Name = "txt_manguoithue";
+            this.txt_manguoithue.Size = new System.Drawing.Size(337, 22);
+            this.txt_manguoithue.TabIndex = 6;
+            // 
+            // cb_nguoithue
+            // 
+            this.cb_nguoithue.FormattingEnabled = true;
+            this.cb_nguoithue.Location = new System.Drawing.Point(187, 85);
+            this.cb_nguoithue.Name = "cb_nguoithue";
+            this.cb_nguoithue.Size = new System.Drawing.Size(337, 24);
+            this.cb_nguoithue.TabIndex = 5;
+            // 
+            // cb_phong
+            // 
+            this.cb_phong.FormattingEnabled = true;
+            this.cb_phong.Location = new System.Drawing.Point(877, 29);
+            this.cb_phong.Name = "cb_phong";
+            this.cb_phong.Size = new System.Drawing.Size(337, 24);
+            this.cb_phong.TabIndex = 5;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(877, 179);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(337, 27);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(737, 179);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 20);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Ngày kết thúc:";
             // 
             // groupBox1
             // 
@@ -326,54 +298,81 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sach Hợp Đồng";
             // 
-            // dateTimePicker1
+            // panel1
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(877, 179);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(337, 27);
-            this.dateTimePicker1.TabIndex = 4;
+            this.panel1.Controls.Add(this.dgv_hopdong);
+            this.panel1.Location = new System.Drawing.Point(6, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1464, 280);
+            this.panel1.TabIndex = 3;
             // 
-            // label8
+            // btn_refresh
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(737, 179);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 20);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Ngày kết thúc:";
+            this.btn_refresh.AutoSize = true;
+            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refresh.Location = new System.Drawing.Point(806, 33);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(87, 30);
+            this.btn_refresh.TabIndex = 2;
+            this.btn_refresh.Text = "Làm mới";
+            this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
-            // cb_phong
+            // btn_search
             // 
-            this.cb_phong.FormattingEnabled = true;
-            this.cb_phong.Location = new System.Drawing.Point(877, 29);
-            this.cb_phong.Name = "cb_phong";
-            this.cb_phong.Size = new System.Drawing.Size(337, 24);
-            this.cb_phong.TabIndex = 5;
+            this.btn_search.AutoSize = true;
+            this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Location = new System.Drawing.Point(687, 34);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(87, 30);
+            this.btn_search.TabIndex = 2;
+            this.btn_search.Text = "Tìm kiếm";
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
-            // cb_nguoithue
+            // label1
             // 
-            this.cb_nguoithue.FormattingEnabled = true;
-            this.cb_nguoithue.Location = new System.Drawing.Point(187, 85);
-            this.cb_nguoithue.Name = "cb_nguoithue";
-            this.cb_nguoithue.Size = new System.Drawing.Size(337, 24);
-            this.cb_nguoithue.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(267, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tìm kiếm ";
             // 
-            // txt_manguoithue
+            // txt_timkiem
             // 
-            this.txt_manguoithue.Location = new System.Drawing.Point(187, 115);
-            this.txt_manguoithue.Name = "txt_manguoithue";
-            this.txt_manguoithue.Size = new System.Drawing.Size(337, 22);
-            this.txt_manguoithue.TabIndex = 6;
+            this.txt_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_timkiem.Location = new System.Drawing.Point(355, 36);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(300, 27);
+            this.txt_timkiem.TabIndex = 1;
             // 
-            // txt_maphong
+            // dgv_hopdong
             // 
-            this.txt_maphong.Location = new System.Drawing.Point(877, 59);
-            this.txt_maphong.Name = "txt_maphong";
-            this.txt_maphong.Size = new System.Drawing.Size(337, 22);
-            this.txt_maphong.TabIndex = 6;
+            this.dgv_hopdong.AllowUserToAddRows = false;
+            this.dgv_hopdong.AllowUserToDeleteRows = false;
+            this.dgv_hopdong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_hopdong.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_hopdong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_hopdong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_hopdong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_hopdong.Location = new System.Drawing.Point(0, 0);
+            this.dgv_hopdong.Name = "dgv_hopdong";
+            this.dgv_hopdong.ReadOnly = true;
+            this.dgv_hopdong.RowHeadersVisible = false;
+            this.dgv_hopdong.RowHeadersWidth = 51;
+            this.dgv_hopdong.RowTemplate.Height = 24;
+            this.dgv_hopdong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_hopdong.Size = new System.Drawing.Size(1464, 280);
+            this.dgv_hopdong.TabIndex = 0;
             // 
             // FrmHopDong
             // 
@@ -383,8 +382,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmHopDong";
             this.Text = "FrmHopDong";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_hopdong)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -392,6 +389,8 @@
             this.panel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_hopdong)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -404,27 +403,27 @@
         private System.Windows.Forms.DateTimePicker dt_ngaysinh;
         private System.Windows.Forms.TextBox txt_giathue;
         private System.Windows.Forms.TextBox txt_mahopdong;
-        private System.Windows.Forms.TextBox txt_timkiem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgv_hopdong;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btn_sua;
-        private System.Windows.Forms.Button btn_refresh;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cb_nguoithue;
         private System.Windows.Forms.ComboBox cb_phong;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_maphong;
         private System.Windows.Forms.TextBox txt_manguoithue;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txt_timkiem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgv_hopdong;
+        private System.Windows.Forms.Button btn_refresh;
+        private System.Windows.Forms.Button btn_search;
+        private System.Windows.Forms.Label label1;
     }
 }

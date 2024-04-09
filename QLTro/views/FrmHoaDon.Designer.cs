@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
@@ -40,8 +40,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_manguoithue = new System.Windows.Forms.TextBox();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_nguoithue = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_hoten = new System.Windows.Forms.TextBox();
             this.rad_nu = new System.Windows.Forms.RadioButton();
@@ -60,12 +58,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoithue)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_nguoithue = new System.Windows.Forms.DataGridView();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoithue)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_xoa
@@ -169,40 +169,6 @@
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(300, 27);
             this.txt_timkiem.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.dgv_nguoithue);
-            this.panel1.Location = new System.Drawing.Point(6, 87);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1464, 280);
-            this.panel1.TabIndex = 3;
-            // 
-            // dgv_nguoithue
-            // 
-            this.dgv_nguoithue.AllowUserToAddRows = false;
-            this.dgv_nguoithue.AllowUserToDeleteRows = false;
-            this.dgv_nguoithue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_nguoithue.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_nguoithue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_nguoithue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nguoithue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_nguoithue.Location = new System.Drawing.Point(0, 0);
-            this.dgv_nguoithue.Name = "dgv_nguoithue";
-            this.dgv_nguoithue.ReadOnly = true;
-            this.dgv_nguoithue.RowHeadersVisible = false;
-            this.dgv_nguoithue.RowHeadersWidth = 51;
-            this.dgv_nguoithue.RowTemplate.Height = 24;
-            this.dgv_nguoithue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_nguoithue.Size = new System.Drawing.Size(1464, 280);
-            this.dgv_nguoithue.TabIndex = 0;
             // 
             // label7
             // 
@@ -414,6 +380,40 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh Hoa Don";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.dgv_nguoithue);
+            this.panel1.Location = new System.Drawing.Point(6, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1464, 280);
+            this.panel1.TabIndex = 3;
+            // 
+            // dgv_nguoithue
+            // 
+            this.dgv_nguoithue.AllowUserToAddRows = false;
+            this.dgv_nguoithue.AllowUserToDeleteRows = false;
+            this.dgv_nguoithue.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_nguoithue.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_nguoithue.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_nguoithue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_nguoithue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_nguoithue.Location = new System.Drawing.Point(0, 0);
+            this.dgv_nguoithue.Name = "dgv_nguoithue";
+            this.dgv_nguoithue.ReadOnly = true;
+            this.dgv_nguoithue.RowHeadersVisible = false;
+            this.dgv_nguoithue.RowHeadersWidth = 51;
+            this.dgv_nguoithue.RowTemplate.Height = 24;
+            this.dgv_nguoithue.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_nguoithue.Size = new System.Drawing.Size(1464, 280);
+            this.dgv_nguoithue.TabIndex = 0;
+            // 
             // FrmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -422,8 +422,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmHoaDon";
             this.Text = "FrmHoaDon";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoithue)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -431,6 +429,8 @@
             this.panel3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_nguoithue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -448,8 +448,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_manguoithue;
         private System.Windows.Forms.TextBox txt_timkiem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgv_nguoithue;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_hoten;
         private System.Windows.Forms.RadioButton rad_nu;
@@ -468,5 +466,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgv_nguoithue;
     }
 }
