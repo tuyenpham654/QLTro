@@ -103,5 +103,10 @@ namespace QLTro
             FrmHoaDon f = new FrmHoaDon();
             f.Show();                                                                                                                                                      
         }
+
+        private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -310,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 405);
+            this.ClientSize = new System.Drawing.Size(788, 404);
             this.Controls.Add(this.txt_maphong);
             this.Controls.Add(this.dgv_detail);
             this.Controls.Add(this.btn_thoat);

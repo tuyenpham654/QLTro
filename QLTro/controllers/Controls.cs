@@ -28,9 +28,14 @@ namespace QLTro.controllers
         {
             return db.LoadDataTable(strView);
         }
-        public DataTable LoadComboBoxKhach(string strView)
+        public DataTable LoadDataTableHOP(string strView)
         {
-            return db.LoadComboBoxKhach(strView);
+            return db.LoadDataTableHOP(strView);
+        }
+        // loaddata Hóa đơn
+        public DataTable LoadDataTableHD(string strView)
+        {
+            return db.LoadDataTableHD(strView);
         }
         public void Delete(string tenbang, string ma)
         {
@@ -46,7 +51,17 @@ namespace QLTro.controllers
         {
             db.NguoiThue( MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email, TrangThai, LOAI);
         }
-        
+        // Hợp đồng
+        public void HopDong(int MaHopDong, int MaNguoiThue,int MaPhong, DateTime NgayBatDau, DateTime NgayKetThuc,int SoLuongNguoi, double PhuThu, string LOAI)
+        {
+            db.HopDong(MaHopDong, MaNguoiThue, MaPhong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, LOAI);
+        }
+        // Hóa đơn
+        public void HoaDon(int MaHoaDon, int MaHopDong, int SoDien, int SoNuoc, DateTime NgayLap, string LOAI)
+        {
+            db.HoaDon(MaHoaDon, MaHopDong, SoDien, SoNuoc, NgayLap, LOAI);
+        }
+
         //Phòng Trọ
         public void PhongTro(int MaPhong, string SoPhong, string ViTri, decimal DienTich, decimal GiaThue, bool TinhTrangThue, bool TrangThai, string LOAI)
         {

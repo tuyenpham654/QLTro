@@ -67,10 +67,25 @@ namespace QLTro.database
             }
             return dt;
         }
-        public DataTable LoadComboBoxKhach(string strView)
+        public DataTable LoadDataTableHOP(string strView)
         {
             DataTable dt = new DataTable();
-            string strQuery = "SELECT [Mã Người Thuê], [Họ Tên] FROM " + strView;
+            string strQuery = "SELECT [Mã Hợp Đồng], [Họ Tên], [Số Phòng], SĐT,[Số Lượng Người], [Ngày Bắt Đầu], [Ngày Kết Thúc], [Phụ Thu], [Trạng Thái] FROM " + strView;
+            using (SqlCommand cmd = new SqlCommand(strQuery, con))
+            {
+                cmd.CommandType = CommandType.Text;
+                using (SqlDataAdapter dap = new SqlDataAdapter(cmd))
+                {
+                    dap.Fill(dt);
+                }
+            }
+            return dt;
+        }
+        // hóa đơn
+        public DataTable LoadDataTableHD(string strView)
+        {
+            DataTable dt = new DataTable();
+            string strQuery = "SELECT [Mã Hóa Đơn], [Mã Hợp Đồng],[Số Điện],[Số Nước], [Số Phòng],[Họ Tên],SĐT,Email,[Tổng Tiền], [Ngày Lập] FROM " + strView;
             using (SqlCommand cmd = new SqlCommand(strQuery, con))
             {
                 cmd.CommandType = CommandType.Text;
@@ -121,6 +136,16 @@ namespace QLTro.database
                     cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "DT_KHACH";
                     cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
                     break;
+                case "TIMKIEM_HOADON":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "TIMKIEM_HOADON";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
+                case "TIMKIEM_HOPDONG":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "TIMKIEM_HOPDONG";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
+
+
             }
             dap = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -157,6 +182,61 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@DienThoai", DienThoai);
                     cmd.Parameters.AddWithValue("@Email", Email);
                     cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
+                    break;
+            }
+            cmd.ExecuteNonQuery();
+        }
+        public void HopDong(string strStore, int MaHopDong, int MaNguoiThue, int MaPhong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, double PhuThu, string LOAI)
+        {
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            switch (LOAI)
+            {
+                case "INSERT":
+                    cmd.Parameters.AddWithValue("@Store", "INSERT");
+                    cmd.Parameters.AddWithValue("@mahopdong", MaHopDong);
+                    cmd.Parameters.AddWithValue("@manguoithue", MaNguoiThue);
+                    cmd.Parameters.AddWithValue("@maphong", MaPhong);
+                    cmd.Parameters.AddWithValue("@ngaybatdau", NgayBatDau);
+                    cmd.Parameters.AddWithValue("@ngayketthuc", NgayKetThuc);
+                    cmd.Parameters.AddWithValue("@soluongnguoi", SoLuongNguoi);
+                    cmd.Parameters.AddWithValue("@phuthu", PhuThu);
+                  
+                    break;
+                case "UPDATE":
+                    cmd.Parameters.AddWithValue("@Store", "UPDATE");
+                    cmd.Parameters.AddWithValue("@mahopdong", MaHopDong);
+                    cmd.Parameters.AddWithValue("@manguoithue", MaNguoiThue);
+                    cmd.Parameters.AddWithValue("@maphong", MaPhong);
+                    cmd.Parameters.AddWithValue("@ngaybatdau", NgayBatDau);
+                    cmd.Parameters.AddWithValue("@ngayketthuc", NgayKetThuc);
+                    cmd.Parameters.AddWithValue("@soluongnguoi", SoLuongNguoi);
+                    cmd.Parameters.AddWithValue("@phuthu", PhuThu);
+                    break;
+            }
+            cmd.ExecuteNonQuery();
+        }
+        public void HoaDon(string strStore, int MaHoaDon, int MaHopDong, int SoDien, int SoNuoc, DateTime NgayLap, string LOAI)
+        {
+            cmd = new SqlCommand(strStore, con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            switch (LOAI)
+            {
+                case "INSERT":
+                    cmd.Parameters.AddWithValue("@Store", "INSERT");
+                    cmd.Parameters.AddWithValue("@mahoadon", MaHoaDon);
+                    cmd.Parameters.AddWithValue("@mahopdong", MaHopDong);
+                    cmd.Parameters.AddWithValue("@sodien", SoDien);
+                    cmd.Parameters.AddWithValue("@sonuoc", SoNuoc);
+
+                    break;
+                case "UPDATE":
+                    cmd.Parameters.AddWithValue("@Store", "UPDATE");
+                    cmd.Parameters.AddWithValue("@mahoadon", MaHoaDon);
+                    cmd.Parameters.AddWithValue("@mahopdong", MaHopDong);
+                    cmd.Parameters.AddWithValue("@sodien", SoDien);
+                    cmd.Parameters.AddWithValue("@sonuoc", SoNuoc);
+
                     break;
             }
             cmd.ExecuteNonQuery();
