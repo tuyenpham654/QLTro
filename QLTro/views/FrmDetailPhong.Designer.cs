@@ -41,7 +41,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_hoten = new System.Windows.Forms.TextBox();
             this.btn_thoat = new System.Windows.Forms.Button();
-            this.dgv_detail = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.txt_giathue = new System.Windows.Forms.TextBox();
             this.txt_vitri = new System.Windows.Forms.TextBox();
             this.txt_maphong = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -176,24 +174,13 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(298, 344);
+            this.btn_thoat.Location = new System.Drawing.Point(324, 342);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(120, 45);
             this.btn_thoat.TabIndex = 16;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
-            // 
-            // dgv_detail
-            // 
-            this.dgv_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_detail.Location = new System.Drawing.Point(-10, 474);
-            this.dgv_detail.Name = "dgv_detail";
-            this.dgv_detail.RowHeadersWidth = 51;
-            this.dgv_detail.RowTemplate.Height = 24;
-            this.dgv_detail.Size = new System.Drawing.Size(786, 249);
-            this.dgv_detail.TabIndex = 17;
-            this.dgv_detail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detail_CellContentClick);
             // 
             // label10
             // 
@@ -310,9 +297,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 404);
+            this.ClientSize = new System.Drawing.Size(788, 410);
             this.Controls.Add(this.txt_maphong);
-            this.Controls.Add(this.dgv_detail);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.txt_ngaybatdau);
             this.Controls.Add(this.txt_ngayketthuc);
@@ -340,7 +326,6 @@
             this.Name = "FrmDetailPhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetailPhong";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,7 +345,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_hoten;
         private System.Windows.Forms.Button btn_thoat;
-        private System.Windows.Forms.DataGridView dgv_detail;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;

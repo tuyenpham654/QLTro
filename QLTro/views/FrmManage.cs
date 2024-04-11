@@ -104,9 +104,12 @@ namespace QLTro
             f.Show();                                                                                                                                                      
         }
 
-        private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
+
+        private void lịchSửHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLSHD f = new FrmLSHD();
+            f.Show();
         }
     }
 }

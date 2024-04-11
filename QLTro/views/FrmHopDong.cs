@@ -107,7 +107,7 @@ namespace QLTro.views
                 hd.Maphong = int.Parse(cb_phong.SelectedValue.ToString());
                 hd.Manguoithue = int.Parse(cb_nguoithue.SelectedValue.ToString());
                
-                ctr.HopDong(int.Parse(hd.Mahopdong), hd.Manguoithue, hd.Maphong, hd.Ngaybatdau,hd.Ngaybatdau,hd.Soluongnguoi,hd.Phuthu, "UPDATE");
+                ctr.HopDong(int.Parse(hd.Mahopdong), hd.Manguoithue, hd.Maphong, hd.Ngaybatdau,hd.Ngayketthuc,hd.Soluongnguoi,hd.Phuthu, "UPDATE");
                 ctr.Disconnect();
                 MessageBox.Show("Sửa thành công !!");
                 System.Windows.Forms.TextBox[] textBoxes = { txt_mahopdong, txt_phuthu, txt_soluongnguoi, txt_timkiem };
@@ -136,7 +136,7 @@ namespace QLTro.views
                 hd.Maphong = int.Parse(cb_phong.SelectedValue.ToString());
                 hd.Manguoithue = int.Parse(cb_nguoithue.SelectedValue.ToString());
 
-                ctr.HopDong(int.Parse(hd.Mahopdong), hd.Manguoithue, hd.Maphong, hd.Ngaybatdau, hd.Ngaybatdau, hd.Soluongnguoi, hd.Phuthu, "INSERT");
+                ctr.HopDong(int.Parse(hd.Mahopdong), hd.Manguoithue, hd.Maphong, hd.Ngaybatdau, hd.Ngayketthuc, hd.Soluongnguoi, hd.Phuthu, "INSERT");
                 ctr.Disconnect();
                 MessageBox.Show("Thêm mới thành công !!");
                 System.Windows.Forms.TextBox[] textBoxes = { txt_mahopdong, txt_phuthu, txt_soluongnguoi, txt_timkiem };
