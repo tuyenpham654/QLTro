@@ -47,9 +47,9 @@ namespace QLTro.controllers
         }
         
         // Người Thuê
-        public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
+        public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string Email, string DienThoai, string DiaChi, bool TrangThai, string LOAI)
         {
-            db.NguoiThue( MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email, TrangThai, LOAI);
+            db.NguoiThue( MaNguoiThue, HoTen, GioiTinh, NgaySinh, Email, DienThoai, DiaChi, TrangThai, LOAI);
         }
         // Hợp đồng
         public void HopDong(int MaHopDong, int MaNguoiThue,int MaPhong, DateTime NgayBatDau, DateTime NgayKetThuc,int SoLuongNguoi, double PhuThu, string LOAI)

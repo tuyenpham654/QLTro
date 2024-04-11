@@ -47,6 +47,7 @@
             this.dt_ngayketthuc = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_soluongnguoi = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,7 +57,6 @@
             this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_search = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_soluongnguoi = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -254,6 +254,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Số Lượng Người:";
             // 
+            // txt_soluongnguoi
+            // 
+            this.txt_soluongnguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_soluongnguoi.Location = new System.Drawing.Point(902, 97);
+            this.txt_soluongnguoi.Name = "txt_soluongnguoi";
+            this.txt_soluongnguoi.Size = new System.Drawing.Size(337, 27);
+            this.txt_soluongnguoi.TabIndex = 1;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.panel4);
@@ -371,14 +379,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tìm kiếm ";
             // 
-            // txt_soluongnguoi
-            // 
-            this.txt_soluongnguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_soluongnguoi.Location = new System.Drawing.Point(902, 97);
-            this.txt_soluongnguoi.Name = "txt_soluongnguoi";
-            this.txt_soluongnguoi.Size = new System.Drawing.Size(337, 27);
-            this.txt_soluongnguoi.TabIndex = 1;
-            // 
             // FrmHopDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,6 +386,7 @@
             this.ClientSize = new System.Drawing.Size(1482, 677);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmHopDong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHopDong";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
