@@ -183,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_account);
             this.Name = "FrmAccount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmAccount";
             this.Load += new System.EventHandler(this.FmAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_account)).EndInit();

@@ -105,6 +105,7 @@
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.label1);
             this.Name = "FrmSearchPhongTro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSearchPhongTro";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_searchphong)).EndInit();
             this.ResumeLayout(false);

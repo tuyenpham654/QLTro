@@ -15,10 +15,10 @@ namespace QLTro
     public partial class FrmManage : Form
     {
         Controls ctr = new controllers.Controls();
-        public FrmManage(string tk)
+        public FrmManage()
         {
             InitializeComponent();
-            label1.Text = "Xin chào " + tk;
+            //label1.Text = "Xin chào " + tk;
             loadDGV();
         }
         public void loadDGV()
@@ -102,6 +102,12 @@ namespace QLTro
         {
             FrmHoaDon f = new FrmHoaDon();
             f.Show();                                                                                                                                                      
+        }
+
+        private void thiếtLậpPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmThietLapPhong f = new FrmThietLapPhong();
+            f.Show();
         }
     }
 }

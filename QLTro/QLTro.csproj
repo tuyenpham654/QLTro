@@ -53,7 +53,9 @@
     <Compile Include="controllers\Controls.cs" />
     <Compile Include="database\Database.cs" />
     <Compile Include="database\DataProvider.cs" />
+    <Compile Include="models\ChiTietHopDong.cs" />
     <Compile Include="models\GiaDienNuoc.cs" />
+    <Compile Include="models\HopDong.cs" />
     <Compile Include="models\NguoiThue.cs" />
     <Compile Include="models\PhongTro.cs" />
     <Compile Include="views\FrmAbout.cs">
@@ -137,6 +139,12 @@
     <Compile Include="views\FrmSearchPhongTro.Designer.cs">
       <DependentUpon>FrmSearchPhongTro.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\FrmThietLapPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmThietLapPhong.Designer.cs">
+      <DependentUpon>FrmThietLapPhong.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="views\FrmAbout.resx">
       <DependentUpon>FrmAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmSearchPhongTro.resx">
       <DependentUpon>FrmSearchPhongTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmThietLapPhong.resx">
+      <DependentUpon>FrmThietLapPhong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

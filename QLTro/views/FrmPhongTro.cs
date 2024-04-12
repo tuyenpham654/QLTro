@@ -104,21 +104,28 @@ namespace QLTro.views
         {
             Controls ctr = new controllers.Controls();
             PhongTro p = new PhongTro();
-            if (txt_sophong.Text != "")
+            if (txt_maphong.Text != "")
             {
-                DialogResult tb = MessageBox.Show("Bạn có chắc muốn xóa ??", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-                if (tb == DialogResult.OK)
+                int maPhong = int.Parse(txt_maphong.Text);
+                bool result;
+                ctr.CheckPhongThue(maPhong, out result);
+
+                if (result)
                 {
-                    p.Maphong = txt_maphong.Text;
-                    ctr.Delete("PhongTro", p.Maphong);
-                    ctr.Disconnect();
-                    MessageBox.Show("Xóa sách thành công", "Thông báo");
-                    TextBox[] textBoxes = { txt_sophong, txt_vitri, txt_dientich, txt_giathue, txt_tinhtrangthue, txt_trangthai };
-                    foreach (TextBox textBox in textBoxes)
+                    MessageBox.Show("Không thể xóa phòng đang được thuê.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                else
+                {
+                    DialogResult tb = MessageBox.Show("Bạn có chắc muốn xóa phòng?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                    if (tb == DialogResult.OK)
                     {
-                        textBox.Text = "";
+                        p.Maphong = txt_maphong.Text;
+                        ctr.Delete("PhongTro", p.Maphong);
+                        ctr.Disconnect();
+                        MessageBox.Show("Xóa phòng thành công", "Thông báo");
+                        LoadDGV();
                     }
-                    LoadDGV();
                 }
             }
             else
@@ -126,6 +133,8 @@ namespace QLTro.views
                 MessageBox.Show("Vui lòng chọn đối tượng xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+
 
         PhongTro pt;
         private void btn_them_Click(object sender, EventArgs e)
@@ -233,9 +242,5 @@ namespace QLTro.views
             }
         }
 
-        private void dgv_phongtro_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

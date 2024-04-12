@@ -64,6 +64,21 @@ namespace QLTro.database
         {
             pr.Account("sp_Account", MaTK, UserName, Password, Loai, LOAI);
         }
+        //Check Phong Tro
+        public void CheckPhongThue(int MaPhong, out bool Result)
+        {
+            pr.CheckPhongThue("sp_CheckPhongThue", MaPhong, out Result);
+        }
+        // Hop dong
+        public void HopDongThue(int MaHopDong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, float PhuThu, bool TrangThai, string LOAI)
+        {
+            pr.HopDongThue("sp_HopDongThue", MaHopDong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, TrangThai, LOAI);
+        }
+        // Chi tiet hop dong
+        public void ChiTietHopDong(int MaHopDong, int MaNguoiThue, int MaPhong, string LOAI)
+        {
+            pr.ChiTietHopDong("sp_ChiTietHopDong", MaHopDong, MaNguoiThue, MaPhong, LOAI);
+        }
 
 
 

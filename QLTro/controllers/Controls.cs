@@ -63,7 +63,20 @@ namespace QLTro.controllers
         {
             db.Account(MaTK, UserName, Password, Loai, LOAI);
         }
-
-
+        //Check Phong Tro
+        public void CheckPhongThue(int MaPhong, out bool Result)
+        {
+            db.CheckPhongThue( MaPhong, out Result);
+        }
+        // Hop dong
+        public void HopDongThue(int MaHopDong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, float PhuThu, bool TrangThai, string LOAI)
+        {
+            db.HopDongThue( MaHopDong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, TrangThai, LOAI);
+        }
+        // Chi tiet hop dong
+        public void ChiTietHopDong(int MaHopDong, int MaNguoiThue, int MaPhong, string LOAI)
+        {
+            db.ChiTietHopDong( MaHopDong, MaNguoiThue, MaPhong, LOAI);
+        }
     }
 }

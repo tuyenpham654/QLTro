@@ -87,7 +87,7 @@ namespace QLTro
             {
 
                 string tk = txt_username.Text;
-                FrmManage f = new FrmManage(tk);
+                FrmManage f = new FrmManage();
                 this.Hide();
                 f.ShowDialog();
             }

@@ -104,6 +104,7 @@
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.label1);
             this.Name = "FrmSearchKhach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSearchKhach";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_searchkhach)).EndInit();
             this.ResumeLayout(false);
