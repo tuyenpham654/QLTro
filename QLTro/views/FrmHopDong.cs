@@ -108,14 +108,8 @@ namespace QLTro.views
 
             hd.Mahopdong = maHopDong;
             ct_hd.Mahopdong = maHopDong;
+            ct_hd.Manguoithue = int.Parse(cb_nguoithue.SelectedValue.ToString());
 
-            int manguoithue;
-            if (!int.TryParse(cb_nguoithue.Text, out manguoithue))
-            {
-                MessageBox.Show("Mã phòng không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            ct_hd.Manguoithue = manguoithue;
 
             int slnguoi;
             if (!int.TryParse(txt_slnguoi.Text, out slnguoi))
@@ -133,16 +127,10 @@ namespace QLTro.views
             }
             hd.Phuthu = phuthu;
 
-            int maphong;
 
-            if (!int.TryParse(cb_phong.SelectedValue.ToString(), out maphong))
-            {
-                MessageBox.Show("Giá trị không hợp lệ: " + cb_phong.SelectedValue.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Console.WriteLine("Giá trị của maphong: " + maphong);
-            }
-            Console.WriteLine("Giá trị của maphong: " + maphong);
+            ct_hd.Maphong = int.Parse(cb_phong.SelectedValue.ToString());
 
-            ct_hd.Maphong = maphong;
+
 
 
             DateTime ngayBatDau = dt_start.Value;

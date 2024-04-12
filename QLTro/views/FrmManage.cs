@@ -20,12 +20,25 @@ namespace QLTro
             InitializeComponent();
             //label1.Text = "Xin chào " + tk;
             loadDGV();
+            loadTXT();
         }
         public void loadDGV()
         {
             dgv_quahan.DataSource = ctr.LoadDataTable("vw_QuaHan");   
         }
-
+        public void loadTXT()
+        {
+            DataTable dt = ctr.LoadDataTable("vw_thongke");
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                txt_giadien.Text = row["GiaDien"].ToString();
+                txt_gianuoc.Text = row["GiaNuoc"].ToString();
+                txt_phongtrong.Text = row["phongtrong"].ToString();
+                txt_slngthue.Text = row["nguoithue"].ToString();
+                txt_tongphong.Text = row["tongphong"].ToString();
+            }
+        }
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();

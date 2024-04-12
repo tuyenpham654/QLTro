@@ -72,7 +72,7 @@ namespace QLTro.database
         // Hop dong
         public void HopDongThue(int MaHopDong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, float PhuThu, bool TrangThai, string LOAI)
         {
-            pr.HopDongThue("sp_HopDongThue", MaHopDong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, TrangThai, LOAI);
+            pr.HopDongThue("sp_HopDong", MaHopDong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, TrangThai, LOAI);
         }
         // Chi tiet hop dong
         public void ChiTietHopDong(int MaHopDong, int MaNguoiThue, int MaPhong, string LOAI)

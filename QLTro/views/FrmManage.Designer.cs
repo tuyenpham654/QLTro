@@ -45,16 +45,28 @@
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tùyChỉnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giáĐiệnNướcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thiếtLậpPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giớiThiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_quahan = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.thiếtLậpPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_tongphong = new System.Windows.Forms.Label();
+            this.txt_phongtrong = new System.Windows.Forms.Label();
+            this.txt_slngthue = new System.Windows.Forms.Label();
+            this.txt_giadien = new System.Windows.Forms.Label();
+            this.txt_gianuoc = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_quahan)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -192,9 +204,16 @@
             // giáĐiệnNướcToolStripMenuItem
             // 
             this.giáĐiệnNướcToolStripMenuItem.Name = "giáĐiệnNướcToolStripMenuItem";
-            this.giáĐiệnNướcToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.giáĐiệnNướcToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
             this.giáĐiệnNướcToolStripMenuItem.Text = "Giá Điện/Nước";
             this.giáĐiệnNướcToolStripMenuItem.Click += new System.EventHandler(this.giáĐiệnNướcToolStripMenuItem_Click);
+            // 
+            // thiếtLậpPhòngToolStripMenuItem
+            // 
+            this.thiếtLậpPhòngToolStripMenuItem.Name = "thiếtLậpPhòngToolStripMenuItem";
+            this.thiếtLậpPhòngToolStripMenuItem.Size = new System.Drawing.Size(199, 26);
+            this.thiếtLậpPhòngToolStripMenuItem.Text = "Thiết Lập Phòng";
+            this.thiếtLậpPhòngToolStripMenuItem.Click += new System.EventHandler(this.thiếtLậpPhòngToolStripMenuItem_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -239,10 +258,10 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dgv_quahan);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 49);
+            this.groupBox1.Location = new System.Drawing.Point(0, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(252, 546);
+            this.groupBox1.Size = new System.Drawing.Size(254, 616);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -255,12 +274,123 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Danh Sách Quá Hạn";
             // 
-            // thiếtLậpPhòngToolStripMenuItem
+            // panel1
             // 
-            this.thiếtLậpPhòngToolStripMenuItem.Name = "thiếtLậpPhòngToolStripMenuItem";
-            this.thiếtLậpPhòngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.thiếtLậpPhòngToolStripMenuItem.Text = "Thiết Lập Phòng";
-            this.thiếtLậpPhòngToolStripMenuItem.Click += new System.EventHandler(this.thiếtLậpPhòngToolStripMenuItem_Click);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.txt_gianuoc);
+            this.panel1.Controls.Add(this.txt_giadien);
+            this.panel1.Controls.Add(this.txt_slngthue);
+            this.panel1.Controls.Add(this.txt_phongtrong);
+            this.panel1.Controls.Add(this.txt_tongphong);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(807, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 232);
+            this.panel1.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tổng số phòng: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 65);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(166, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Phòng còn trống: ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(3, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(197, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Số lượng người thuê: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 149);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Giá điện: ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 25);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Giá nước: ";
+            // 
+            // txt_tongphong
+            // 
+            this.txt_tongphong.AutoSize = true;
+            this.txt_tongphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tongphong.Location = new System.Drawing.Point(164, 21);
+            this.txt_tongphong.Name = "txt_tongphong";
+            this.txt_tongphong.Size = new System.Drawing.Size(34, 25);
+            this.txt_tongphong.TabIndex = 1;
+            this.txt_tongphong.Text = "22";
+            // 
+            // txt_phongtrong
+            // 
+            this.txt_phongtrong.AutoSize = true;
+            this.txt_phongtrong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_phongtrong.Location = new System.Drawing.Point(175, 65);
+            this.txt_phongtrong.Name = "txt_phongtrong";
+            this.txt_phongtrong.Size = new System.Drawing.Size(34, 25);
+            this.txt_phongtrong.TabIndex = 1;
+            this.txt_phongtrong.Text = "22";
+            // 
+            // txt_slngthue
+            // 
+            this.txt_slngthue.AutoSize = true;
+            this.txt_slngthue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_slngthue.Location = new System.Drawing.Point(206, 105);
+            this.txt_slngthue.Name = "txt_slngthue";
+            this.txt_slngthue.Size = new System.Drawing.Size(34, 25);
+            this.txt_slngthue.TabIndex = 1;
+            this.txt_slngthue.Text = "22";
+            // 
+            // txt_giadien
+            // 
+            this.txt_giadien.AutoSize = true;
+            this.txt_giadien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_giadien.Location = new System.Drawing.Point(104, 149);
+            this.txt_giadien.Name = "txt_giadien";
+            this.txt_giadien.Size = new System.Drawing.Size(34, 25);
+            this.txt_giadien.TabIndex = 1;
+            this.txt_giadien.Text = "22";
+            // 
+            // txt_gianuoc
+            // 
+            this.txt_gianuoc.AutoSize = true;
+            this.txt_gianuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gianuoc.Location = new System.Drawing.Point(110, 188);
+            this.txt_gianuoc.Name = "txt_gianuoc";
+            this.txt_gianuoc.Size = new System.Drawing.Size(34, 25);
+            this.txt_gianuoc.TabIndex = 1;
+            this.txt_gianuoc.Text = "22";
             // 
             // FrmManage
             // 
@@ -268,6 +398,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1080, 649);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -284,6 +415,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_quahan)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +447,16 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem thiếtLậpPhòngToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label txt_gianuoc;
+        private System.Windows.Forms.Label txt_giadien;
+        private System.Windows.Forms.Label txt_slngthue;
+        private System.Windows.Forms.Label txt_phongtrong;
+        private System.Windows.Forms.Label txt_tongphong;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
