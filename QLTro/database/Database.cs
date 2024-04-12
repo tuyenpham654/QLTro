@@ -31,14 +31,9 @@ namespace QLTro.database
         {
             return pr.LoadDataTable(strView);
         }
-        public DataTable LoadDataTableHOP(string strView)
+        public DataTable LoadComboBoxKhach(string strView)
         {
-            return pr.LoadDataTableHOP(strView);
-        }
-        //Hóa Đơn
-        public DataTable LoadDataTableHD(string strView)
-        {
-            return pr.LoadDataTableHD(strView);
+            return pr.LoadComboBoxKhach(strView);
         }
         // Xoá
         public void Delete(string tenbang, string ID)
@@ -51,19 +46,9 @@ namespace QLTro.database
             return pr.Search("sp_search", ten, key);
         }
         // Người Thuê
-        public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string Email, string DienThoai, string DiaChi, bool TrangThai, string LOAI)
+        public void NguoiThue(int MaNguoiThue, string HoTen, bool GioiTinh, DateTime NgaySinh, string DiaChi, string DienThoai, string Email, bool TrangThai, string LOAI)
         {
-            pr.NguoiThue("sp_NguoiThue", MaNguoiThue, HoTen, GioiTinh, NgaySinh, Email, DienThoai, DiaChi,TrangThai, LOAI);
-        }
-        // Hợp Đồng
-        public void HopDong(int MaHopDong, int MaNguoiThue, int MaPhong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, double PhuThu, string LOAI)
-        {
-            pr.HopDong("sp_HopDongThue", MaHopDong, MaNguoiThue, MaPhong, NgayBatDau, NgayKetThuc, SoLuongNguoi, PhuThu, LOAI);
-        }
-        //Hóa đơn
-        public void HoaDon(int MaHoaDon, int MaHopDong, int SoDien, int SoNuoc, DateTime NgayLap, string LOAI)
-        {
-            pr.HoaDon("sp_HoaDon", MaHoaDon, MaHopDong, SoDien, SoNuoc, NgayLap, LOAI);
+            pr.NguoiThue("sp_NguoiThue", MaNguoiThue, HoTen, GioiTinh, NgaySinh, DiaChi, DienThoai, Email,TrangThai, LOAI);
         }
         // Phòng Trọ
         public void PhongTro(int MaPhong, string SoPhong, string ViTri, decimal DienTich, decimal GiaThue, bool TinhTrangThue, bool TrangThai, string LOAI)

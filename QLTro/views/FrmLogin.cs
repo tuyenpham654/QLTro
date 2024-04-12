@@ -19,7 +19,6 @@ namespace QLTro
         public FrmLogin()
         {
             InitializeComponent();
-            this.KeyDown += new KeyEventHandler(txt_password_KeyDown);
          
         }
         Controls ctr = new controllers.Controls();
@@ -96,16 +95,6 @@ namespace QLTro
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-            }
-        }
-
-
-
-        private void txt_password_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btn_login_Click(sender, e);
             }
         }
     }

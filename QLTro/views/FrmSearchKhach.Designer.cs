@@ -43,7 +43,7 @@
             this.dgv_searchkhach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_searchkhach.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_searchkhach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_searchkhach.Location = new System.Drawing.Point(-9, 209);
+            this.dgv_searchkhach.Location = new System.Drawing.Point(-9, 216);
             this.dgv_searchkhach.Name = "dgv_searchkhach";
             this.dgv_searchkhach.RowHeadersWidth = 51;
             this.dgv_searchkhach.RowTemplate.Height = 24;

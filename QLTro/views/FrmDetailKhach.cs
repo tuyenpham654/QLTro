@@ -22,6 +22,7 @@ namespace QLTro.views
         }
         private void LoadDGV(string mp)
         {
+
             DataTable dt = ctr.Search(mp, "DT_KHACH");
             if (dt != null && dt.Rows.Count > 0)
             {
@@ -41,7 +42,7 @@ namespace QLTro.views
                     txt_sophong.Text = "";
                 }
 
-                DateTime dateValuebd =DateTime.Parse( row["NgaySinh"].ToString());
+                DateTime dateValuebd = DateTime.Parse(row["NgaySinh"].ToString());
                 string ngaysinh = dateValuebd.ToShortDateString();
                 txt_ngaysinh.Text = ngaysinh;
 
@@ -50,7 +51,7 @@ namespace QLTro.views
                 txt_email.Text = row["Email"].ToString();
 
 
-                
+
 
 
                 DateTime? datebd = row["NgayBatDau"] as DateTime?;
@@ -72,7 +73,7 @@ namespace QLTro.views
                 else
                 {
                     txt_ngayketthuc.Text = "";
-                }                                
+                }
             }
         }
 

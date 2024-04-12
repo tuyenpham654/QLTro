@@ -122,13 +122,5 @@ namespace QLTro
             FrmThietLapPhong f = new FrmThietLapPhong();
             f.Show();
         }
-
-
-
-        private void lịchSửHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmLSHD f = new FrmLSHD();
-            f.Show();
-        }
     }
 }

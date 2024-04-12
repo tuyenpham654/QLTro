@@ -41,6 +41,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_hoten = new System.Windows.Forms.TextBox();
             this.btn_thoat = new System.Windows.Forms.Button();
+            this.dgv_detail = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -52,6 +53,7 @@
             this.txt_giathue = new System.Windows.Forms.TextBox();
             this.txt_vitri = new System.Windows.Forms.TextBox();
             this.txt_maphong = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,7 @@
             // 
             this.txt_trangthai.Enabled = false;
             this.txt_trangthai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_trangthai.Location = new System.Drawing.Point(566, 181);
+            this.txt_trangthai.Location = new System.Drawing.Point(556, 181);
             this.txt_trangthai.Name = "txt_trangthai";
             this.txt_trangthai.ReadOnly = true;
             this.txt_trangthai.Size = new System.Drawing.Size(201, 27);
@@ -86,7 +88,7 @@
             // 
             this.txt_tinhtrangthue.Enabled = false;
             this.txt_tinhtrangthue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tinhtrangthue.Location = new System.Drawing.Point(566, 126);
+            this.txt_tinhtrangthue.Location = new System.Drawing.Point(556, 126);
             this.txt_tinhtrangthue.Name = "txt_tinhtrangthue";
             this.txt_tinhtrangthue.ReadOnly = true;
             this.txt_tinhtrangthue.Size = new System.Drawing.Size(201, 27);
@@ -166,7 +168,7 @@
             // 
             this.txt_hoten.Enabled = false;
             this.txt_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_hoten.Location = new System.Drawing.Point(566, 226);
+            this.txt_hoten.Location = new System.Drawing.Point(556, 226);
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.ReadOnly = true;
             this.txt_hoten.Size = new System.Drawing.Size(201, 27);
@@ -174,13 +176,24 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(324, 342);
+            this.btn_thoat.Location = new System.Drawing.Point(298, 344);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(120, 45);
             this.btn_thoat.TabIndex = 16;
             this.btn_thoat.Text = "Thoát";
             this.btn_thoat.UseVisualStyleBackColor = true;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            // 
+            // dgv_detail
+            // 
+            this.dgv_detail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_detail.Location = new System.Drawing.Point(-10, 474);
+            this.dgv_detail.Name = "dgv_detail";
+            this.dgv_detail.RowHeadersWidth = 51;
+            this.dgv_detail.RowTemplate.Height = 24;
+            this.dgv_detail.Size = new System.Drawing.Size(786, 249);
+            this.dgv_detail.TabIndex = 17;
+            this.dgv_detail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detail_CellContentClick);
             // 
             // label10
             // 
@@ -217,7 +230,7 @@
             // 
             this.txt_mahopdong.Enabled = false;
             this.txt_mahopdong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mahopdong.Location = new System.Drawing.Point(566, 69);
+            this.txt_mahopdong.Location = new System.Drawing.Point(556, 69);
             this.txt_mahopdong.Name = "txt_mahopdong";
             this.txt_mahopdong.ReadOnly = true;
             this.txt_mahopdong.Size = new System.Drawing.Size(201, 27);
@@ -227,7 +240,7 @@
             // 
             this.txt_ngayketthuc.Enabled = false;
             this.txt_ngayketthuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ngayketthuc.Location = new System.Drawing.Point(566, 272);
+            this.txt_ngayketthuc.Location = new System.Drawing.Point(556, 272);
             this.txt_ngayketthuc.Name = "txt_ngayketthuc";
             this.txt_ngayketthuc.ReadOnly = true;
             this.txt_ngayketthuc.Size = new System.Drawing.Size(201, 27);
@@ -297,8 +310,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 410);
+            this.ClientSize = new System.Drawing.Size(788, 405);
             this.Controls.Add(this.txt_maphong);
+            this.Controls.Add(this.dgv_detail);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.txt_ngaybatdau);
             this.Controls.Add(this.txt_ngayketthuc);
@@ -326,6 +340,7 @@
             this.Name = "FrmDetailPhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetailPhong";
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_detail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,6 +360,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_hoten;
         private System.Windows.Forms.Button btn_thoat;
+        private System.Windows.Forms.DataGridView dgv_detail;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
