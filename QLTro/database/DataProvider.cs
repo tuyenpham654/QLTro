@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLTro.database
 {
@@ -103,7 +104,15 @@ namespace QLTro.database
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = tenbang;
             cmd.Parameters.Add("@ID", SqlDbType.NVarChar).Value = ID;
-            cmd.ExecuteNonQuery();
+            try 
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            
         }
 
         public DataTable Search(string strStore, string ten, string key)
@@ -188,7 +197,14 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void HopDong(string strStore, int MaHopDong, int MaNguoiThue, int MaPhong, DateTime NgayBatDau, DateTime NgayKetThuc, int SoLuongNguoi, double PhuThu, string LOAI)
         {
@@ -218,7 +234,14 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@phuthu", PhuThu);
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         public void HoaDon(string strStore, int MaHoaDon, int MaHopDong, int SoDien, int SoNuoc, DateTime NgayLap, string LOAI)
         {
@@ -243,7 +266,15 @@ namespace QLTro.database
 
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            { 
+                cmd.ExecuteNonQuery(); 
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+
         }
 
         // Phòng Trọ
@@ -274,7 +305,14 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         // Giá Điện Nước
@@ -292,7 +330,14 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@TrangThai", TrangThai);
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
         //Account
         public void Account(string strStore, int MaTK, string Username, string Password,string Loai, string LOAI)
@@ -316,7 +361,14 @@ namespace QLTro.database
                     cmd.Parameters.AddWithValue("@loai", Loai);
                     break;
             }
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
     }
 }
