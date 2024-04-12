@@ -157,6 +157,10 @@ namespace QLTro.database
                     cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "TIMKIEM_LSHOADON";
                     cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
                     break;
+                case "TIMKIEM_CBNT":
+                    cmd.Parameters.Add("@tenbang", SqlDbType.NVarChar).Value = "TIMKIEM_CBNT";
+                    cmd.Parameters.Add("@ten", SqlDbType.NVarChar).Value = ten;
+                    break;
 
 
             }
