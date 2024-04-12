@@ -56,6 +56,8 @@
     <Compile Include="models\ChiTietHopDong.cs" />
     <Compile Include="models\GiaDienNuoc.cs" />
     <Compile Include="models\HopDong.cs" />
+    <Compile Include="models\HoaDon.cs" />
+    <Compile Include="models\HopDongThue.cs" />
     <Compile Include="models\NguoiThue.cs" />
     <Compile Include="models\PhongTro.cs" />
     <Compile Include="views\FrmAbout.cs">
@@ -99,6 +101,12 @@
     </Compile>
     <Compile Include="views\FrmHopDong.Designer.cs">
       <DependentUpon>FrmHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\FrmLSHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\FrmLSHD.Designer.cs">
+      <DependentUpon>FrmLSHD.cs</DependentUpon>
     </Compile>
     <Compile Include="views\FrmManage.cs">
       <SubType>Form</SubType>
@@ -165,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmHopDong.resx">
       <DependentUpon>FrmHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\FrmLSHD.resx">
+      <DependentUpon>FrmLSHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\FrmManage.resx">
       <DependentUpon>FrmManage.cs</DependentUpon>

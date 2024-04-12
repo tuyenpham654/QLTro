@@ -61,6 +61,7 @@
             this.txt_password.Text = "Password";
             this.txt_password.UseSystemPasswordChar = true;
             this.txt_password.Enter += new System.EventHandler(this.txtPassword_Enter);
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_password_KeyDown);
             this.txt_password.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // groupBox1
@@ -92,7 +93,7 @@
             this.btn_close.Location = new System.Drawing.Point(294, 298);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(121, 38);
-            this.btn_close.TabIndex = 5;
+            this.btn_close.TabIndex = 3;
             this.btn_close.Text = "Close";
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
@@ -115,7 +116,7 @@
             this.btn_login.Location = new System.Drawing.Point(84, 298);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(121, 38);
-            this.btn_login.TabIndex = 3;
+            this.btn_login.TabIndex = 2;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);

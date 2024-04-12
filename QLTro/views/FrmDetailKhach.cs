@@ -22,53 +22,57 @@ namespace QLTro.views
         }
         private void LoadDGV(string mp)
         {
-
-            dgv_khachdt.DataSource = ctr.Search(mp, "DT_KHACH");
-            if (dgv_khachdt.Rows.Count > 0)
+            DataTable dt = ctr.Search(mp, "DT_KHACH");
+            if (dt != null && dt.Rows.Count > 0)
             {
-                DataGridViewRow selectedRow = dgv_khachdt.Rows[0];
+                DataRow row = dt.Rows[0];
 
-                txt_makhach.Text = selectedRow.Cells[0].Value.ToString();
-                txt_hoten.Text = selectedRow.Cells[1].Value.ToString();
-                txt_gioitinh.Text = selectedRow.Cells[2].Value.ToString();
-                /*if (selectedRow.Cells[2].Value != null)
+                txt_makhach.Text = row["Mã"].ToString();
+                txt_hoten.Text = row["Họ và Tên"].ToString();
+                txt_gioitinh.Text = row["Giới Tính"].ToString();
+
+                object soPhongValue = row["Số Phòng"];
+                if (soPhongValue != DBNull.Value)
                 {
-                    if (selectedRow.Cells[3].Value.ToString() == "active")
-                    {
-                        txt_gioitinh.Text = "Nam";
-                    }
-                    else
-                    {
-                        txt_gioitinh.Text = "Nữ";
-                    }
+                    txt_sophong.Text = soPhongValue.ToString();
                 }
                 else
                 {
-                    txt_gioitinh.Text = string.Empty;
-                }*/
-                txt_sophong.Text = selectedRow.Cells[3].Value.ToString();
+                    txt_sophong.Text = "";
+                }
 
-                string dateStringbd = selectedRow.Cells[4].Value.ToString();
-                DateTime dateValuebd = DateTime.Parse(dateStringbd);
+                DateTime dateValuebd =DateTime.Parse( row["NgaySinh"].ToString());
                 string ngaysinh = dateValuebd.ToShortDateString();
                 txt_ngaysinh.Text = ngaysinh;
 
-                txt_diachi.Text = selectedRow.Cells[5].Value.ToString();
-                txt_sdt.Text = selectedRow.Cells[6].Value.ToString();
-                txt_email.Text = selectedRow.Cells[7].Value.ToString();
-               
-
-                string dateString = selectedRow.Cells[9].Value.ToString();
-                DateTime dateValue = DateTime.Parse(dateString);
-                string ngayBatDau = dateValue.ToShortDateString();
-                txt_ngaybatdau.Text = ngayBatDau;
-
-                string dateString1 = selectedRow.Cells[10].Value.ToString();
-                DateTime dateValue1 = DateTime.Parse(dateString);
-                string ngayBatDau1 = dateValue.ToShortDateString();
-                txt_ngayketthuc.Text = ngayBatDau1;
+                txt_diachi.Text = row["DiaChi"].ToString();
+                txt_sdt.Text = row["DienThoai"].ToString();
+                txt_email.Text = row["Email"].ToString();
 
 
+                
+
+
+                DateTime? datebd = row["NgayBatDau"] as DateTime?;
+                if (datebd != null)
+                {
+                    string ngayBatDau = datebd.Value.ToShortDateString();
+                    txt_ngayketthuc.Text = ngayBatDau;
+                }
+                else
+                {
+                    txt_ngaybatdau.Text = "";
+                }
+                DateTime? datekt = row["NgayKetThuc"] as DateTime?;
+                if (datekt != null)
+                {
+                    string ngayKetThuc = datekt.Value.ToShortDateString();
+                    txt_ngayketthuc.Text = ngayKetThuc;
+                }
+                else
+                {
+                    txt_ngayketthuc.Text = "";
+                }                                
             }
         }
 

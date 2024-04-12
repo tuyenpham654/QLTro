@@ -49,9 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgv_khachdt = new System.Windows.Forms.DataGridView();
             this.btn_thoat = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_khachdt)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_makhach
@@ -263,16 +261,6 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 19;
             // 
-            // dgv_khachdt
-            // 
-            this.dgv_khachdt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_khachdt.Location = new System.Drawing.Point(12, 515);
-            this.dgv_khachdt.Name = "dgv_khachdt";
-            this.dgv_khachdt.RowHeadersWidth = 51;
-            this.dgv_khachdt.RowTemplate.Height = 24;
-            this.dgv_khachdt.Size = new System.Drawing.Size(966, 150);
-            this.dgv_khachdt.TabIndex = 42;
-            // 
             // btn_thoat
             // 
             this.btn_thoat.Location = new System.Drawing.Point(321, 354);
@@ -288,9 +276,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(788, 405);
+            this.ClientSize = new System.Drawing.Size(788, 418);
             this.Controls.Add(this.btn_thoat);
-            this.Controls.Add(this.dgv_khachdt);
             this.Controls.Add(this.txt_makhach);
             this.Controls.Add(this.txt_ngaybatdau);
             this.Controls.Add(this.txt_ngayketthuc);
@@ -316,7 +303,6 @@
             this.Name = "FrmDetailKhach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDetailKhach";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_khachdt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,7 +331,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgv_khachdt;
         private System.Windows.Forms.Button btn_thoat;
     }
 }

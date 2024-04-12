@@ -25,61 +25,47 @@ namespace QLTro.views
         }
         private void LoadDGV(string mp)
         {
-
-            dgv_detail.DataSource = ctr.Search(mp, "DT_PHONGTRO");
-            if (dgv_detail.Rows.Count > 0)
+            DataTable dt = ctr.Search(mp, "DT_PHONGTRO");
+            if (dt != null && dt.Rows.Count > 0)
             {
-                DataGridViewRow selectedRow = dgv_detail.Rows[0];
+                DataRow row = dt.Rows[0];
+               
+                txt_maphong.Text = row["Ma Phong"].ToString();
+                txt_sophong.Text = row["Số Phòng"].ToString();
+                txt_vitri.Text = row["Vị trí phòng"].ToString();
+                
+                txt_trangthai.Text = row["Trạng thái phòng"].ToString();
+                txt_tinhtrangthue.Text = row["tình trạng thuê"].ToString();   
 
-                txt_maphong.Text = selectedRow.Cells[0].Value.ToString();
-                txt_sophong.Text = selectedRow.Cells[1].Value.ToString();
-                txt_vitri.Text = selectedRow.Cells[2].Value.ToString();
-                if (selectedRow.Cells[3].Value != null)
+                txt_hoten.Text = row["Họ tên người thuê"].ToString();
+                txt_mahopdong.Text = row["Mã hợp đồng"].ToString();
+
+                DateTime? dateValue = row["Ngày bắt đầu"] as DateTime?;
+                if (dateValue != null)
                 {
-                    if (selectedRow.Cells[3].Value.ToString() == "active")
-                    {
-                        txt_trangthai.Text = "active";
-                    }
-                    else
-                    {
-                        txt_trangthai.Text = "passive";
-                    }
+                    string ngayBatDau = dateValue.Value.ToShortDateString();
+                    txt_ngaybatdau.Text = ngayBatDau;
                 }
                 else
                 {
-                    txt_trangthai.Text = string.Empty;
+                    txt_ngaybatdau.Text = "";
                 }
-                if (selectedRow.Cells[4].Value != null)
+
+                DateTime? datekt = row["Ngày kết thúc"] as DateTime?;
+                if(datekt != null)
                 {
-                    if (selectedRow.Cells[4].Value.ToString() == "active")
-                    {
-                        txt_tinhtrangthue.Text = "active";
-                    }
-                    else
-                    {
-                        txt_tinhtrangthue.Text = "passive";
-                    }
+                    string ngayBatDau1 = datekt.Value.ToShortDateString();
+                    txt_ngayketthuc.Text = ngayBatDau1;
                 }
                 else
                 {
-                    txt_tinhtrangthue.Text = string.Empty;
+                    txt_ngaybatdau.Text = "";
                 }
-                txt_hoten.Text = selectedRow.Cells[5].Value.ToString();
-                txt_mahopdong.Text = selectedRow.Cells[6].Value.ToString();
 
-                string dateString = selectedRow.Cells[7].Value.ToString();
-                DateTime dateValue = DateTime.Parse(dateString);
-                string ngayBatDau = dateValue.ToShortDateString();
-                txt_ngaybatdau.Text = ngayBatDau;
-
-                string dateString1 = selectedRow.Cells[8].Value.ToString();
-                DateTime dateValue1 = DateTime.Parse(dateString);
-                string ngayBatDau1 = dateValue.ToShortDateString();
-                txt_ngayketthuc.Text = ngayBatDau1;
-                txt_dientich.Text = selectedRow.Cells[9].Value.ToString();
-                txt_giathue.Text = selectedRow.Cells[10].Value.ToString();
-
+                txt_dientich.Text = row["DienTich"].ToString();
+                txt_giathue.Text = row["GiaThue"].ToString();
             }
+
         }
         
         private void btn_thoat_Click(object sender, EventArgs e)
